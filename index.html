@@ -10,59 +10,40 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="\coding\rootf\github\project2\assets\style.css" type="text/css" />
+
   <title>Memory Toad</title>
 </head>
-<!--Using Bootsrap for responsive navbar-->
-<body class="d-flex flex-column h-100">
+<body>
   <header>
-    <!-- Navbar for desktop(bigger screen)-->
-    <nav class="navbar d-none d-lg-block d-md-none">
-      <div class="container-fluid px-4">
-        <nav >
-    <a class="navbar-brand" href="#">
-      <img src="\coding\rootf\github\project2\assets\img\logo.png" >
-    </a>
-  </nav>
-        <ul class="list-group list-group-horizontal">
-          <li class="list-group-item bg-transparent border-0 form-check form-switch">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-          </li>
-          <li class="list-group-item border-start-0 border-top-0 border-bottom-0 border-right bg-dark">
-            <a href="contact.html">Contact</a>
-          </li>
-          <li class="list-group-item border-start-0 border-top-0 border-bottom-0 border-right bg-dark">
-            <a href="about.html">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Navbar for mobile -->
-    <nav class="navbar d-lg-none d-md-block mobile-nav">
-      <div class="container-fluid px-2">
-        <div class="col-2 col-md-3">
-          <button type="button"  data-bs-toggle="collapse" data-bs-target="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav"><i class="fas fa-bars fs-1"></i></button>
-        </div>
-        <div class="col-8 col-md-4 text-center">
-          <a href="#" class="navbar-brand"><img src ="\coding\rootf\github\project2\assets\img\logo.png "></a>
-        </div>
-        <div class="col-2 col-md-3">
-        </div>
-      </div>
-    </nav>
-    <div id="mobile-nav" class="collapse position-absolute w-100 bg-dark">
-      <ul class="list-unstyled list-group text-center">
-        <li class="list-group-item bg-dark p-3"><a href="#" class="active-link">Play</a></li>
-        <li class="list-group-item bg-dark p-3"><a href="faqs.html">About</a></li>
-        <li class="list-group-item bg-dark p-3"><a href="contact.html">Contact</a></li>
-        <li class="list-group-item bg-transparent border-0 form-check form-switch mx-auto p-3">
-          <label class="form-check-label" for="flexSwitchCheckDefaultMobile">Dark Mode</label>
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultMobile">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img src="\coding\rootf\github\project2\assets\img\logo.png" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-lg-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Play<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
+
     </div>
-  </header>
+  </nav>
+</header>
+
+
+
+
+
   <div id="main-section">
     <div class="container mt-4 mb-4">
       <h2 class="text-center"><img src="\coding\rootf\github\project2\assets\img\toad2.png"></h2>
@@ -73,62 +54,36 @@
           <button type="button" id="start-game">Play</button>
         </div>
         <div class="col-lg-3">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#instructions">Instructions</button>
+          <button type="button" id="instructions"data-bs-toggle="modal" data-bs-target="#instructions">Instructions</button>
         </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="instructions" tabindex="-1" aria-labelledby="instructions" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content bg-site-dark">
-          <div class="modal-header">
-            <h3 class="modal-title mx-auto" id="instructionsHeading">Instructions</h3>
-          </div>
-          <div class="modal-body text-center">
-            <ul class="list-unstyled">
-              <li class="list-group-item bg-site-dark">1. Press the play button to take you to the game.</li>
-              <li class="list-group-item bg-site-dark">2. To start the game start typing the word which is highlighted in the box above.</li>
-              <li class="list-group-item bg-site-dark">3. To move onto the next word hit space-bar after you press the space-bar the letters that you typed will then be evaluated against the word you are currently on. Remember it has to match
-                exactly!</li>
-              <li class="list-group-item bg-site-dark">4. If you made a mistake or want to restart the game click the restart button to the right of the typing box, this will restart everything back to the beginning.</li>
-              <li class="list-group-item bg-site-dark">5. (Optional) When you reach the end of the game you can then share your results by clicking one of the social media icons.</li>
-            </ul>
-          </div>
 
 
-        <div class="col-3 text-center"><a href="#" id="twitterShare" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
-        <div class="col-3 text-center"><a href="#" id="telegramShare" target="_blank"><i class="fab fa-telegram-plane"></i></a></div>
-      </div>
     </div>
   </div>
+
+
+
+
   <footer class="mt-auto mx-lg-0">
     <div class="flex px-4 py-4 text-center text-md-start">
     </div>
     <div class="container-fluid">
       <div class="row justify-content-center justify-content-md-start text-center text-md-start mx-auto">
+
         <div class="col-2 col-lg-1">
-          <a href="https://www.facebook.com/profile.php?id=100001365572958" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/brad_webp/" target="_blank"><i class="fab fa-instagram" style="font-size:30px" ></i></a>
         </div>
         <div class="col-2 col-lg-1">
-          <a href="https://www.linkedin.com/in/bradley-playdon/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="col-2 col-lg-1">
-          <a href="https://twitter.com/mynamesbradley" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        </div>
-        <div class="col-2 col-lg-1">
-          <a href="https://www.instagram.com/brad_webp/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="col-2 col-lg-1">
-          <a href="https://github.com/bradleyplaydon" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/laila-ba" target="_blank"><i class="fab fa-github" style="font-size:30px"></i></a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/typing-game.js"></script>
-  <script src="assets/js/facebookSDK.js"></script>
-  <script src="assets/js/font-switcher.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
