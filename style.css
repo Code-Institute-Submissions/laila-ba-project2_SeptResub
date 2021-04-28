@@ -1,13 +1,14 @@
 body{
   background: url(img/sky2.jpg)no-repeat center center;
+
 }
 header{
-  position:relative;
+  position:absolute;
   z-index:10;
   width:100%;
 }
 .navbar {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .navbar-light .navbar-nav .nav-item .nav-link{
   color:#000;
@@ -29,8 +30,10 @@ header{
 }
 
 .text-center img{
-  width:500px;
-  height:auto 0;
+  text-align: center;
+  width:250px;
+  height: 0 auto;
+
 }
  nav a{
   color:#FDCB00;
@@ -38,8 +41,9 @@ header{
 footer a{
   color:#FD0000;
   text-align:center;
+  padding:0 20px;
 }
-a:hover{
+footer a:hover{
   color:#FD0000;
 }
 #start-game{
@@ -49,6 +53,10 @@ a:hover{
   background-color:#FD0000;
   border-radius:50px;
   font-size:20px;
+  width:120px;
+}
+#start-game:hover{
+
 }
 #instructions{
   text-transform:uppercase;
@@ -57,10 +65,18 @@ a:hover{
   background-color:#2323FB;
   border-radius:50px;
   font-size:20px;
+  width:190px;
+
 }
 .navbar-light .navbar-toggler{
   border:none;
   color:#fff;
   border-radius:0;
   font-size:30px;
+}
+@media screen and (max-width: 768px){
+  header{
+    position:relative;
+
+  }
 }
