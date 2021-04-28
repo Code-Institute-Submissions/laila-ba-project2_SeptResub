@@ -16,4 +16,12 @@ During the planning process, I found the Elements of User-Experience to be helpf
 
 #Stategy
 
-Once I had decided that I wanted to create a simple and fun memory game, I began to conduct some research on what features a conventional memory game included
+I began to conduct some research on what features a conventional memory game included in order to further understand what users would be expecting. I came up with a list of goals that I would want to achieve for my project:
+
+*Creator stories*
+
+- As a creator, I want to create a positive user response throughout the project, allowing the user to find exactly what they are looking for.
+- As a creator, I want to make sure that all content isn't too much for the eye and it all flows together nicely and smoothly.
+- As a creator, I want to ensure that once viewing my project from the homepage, the user is not confused by the purpose of the project.
+- As a creator, I want users are able to interact with the site in their particular way, to achieve their
+personal goals
