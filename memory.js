@@ -57,7 +57,7 @@ const game= document.querySelector('game')
 //loop over card array + create image elements
   for (let i = 0; i < cardArray.length; i++){
     var card = document.createElement('img')
-    card.setAttribute('src', 'img/random.png')
+    card.setAttribute('src', './assets/img/random.png')
     card.setAttribute('data-id', i)
     //card.addEventListener('click',flipcard)
     game.appendChild(card)
