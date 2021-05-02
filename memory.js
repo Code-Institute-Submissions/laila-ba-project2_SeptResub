@@ -4,55 +4,55 @@ document.addEventListener('DOMContentLoaded', ()=>{
 const cardArray = [
   {
     name:'black',
-    img:'img/black.edit.png'
+    img:'./assets/img/black.edit.png'
   },
   {
     name:'black',
-    img:'img/black.edit.png'
+    img:'./assets/img/black.edit.png'
   },
   {
     name:'blue',
-    img:'img/blue.edit.png'
+    img:'./assets/img/blue.edit.png'
   },
   {
     name:'blue',
-    img:'img/blue.edit.png'
+    img:'./assets/img/blue.edit.png'
   },
   {
     name:'green',
-    img:'img/green.edit.png'
+    img:'./assets/img/green.edit.png'
   },
   {
     name:'green',
-    img:'img/green.edit.png'
+    img:'./assets/img/green.edit.png'
   },
   {
     name:'orange',
-    img:'img/orange.edit.png'
+    img:'./assets/img/orange.edit.png'
   },
   {
     name:'orange',
-    img:'img/orange.edit.png'
+    img:'./assets/img/orange.edit.png'
   },
   {
     name:'purple',
-    img:'img/purple.edit.png'
+    img:'./assets/img/purple.edit.png'
   },
   {
     name:'purple',
-    img:'img/purple.edit.png'
+    img:'./assets/img/purple.edit.png'
   },
   {
     name:'yellow',
-    img:'img/yellow.edit.png'
+    img:'./assets/img/yellow.edit.png'
   },
   {
     name:'yellow',
-    img:'img/yellow.edit.png'
+    img:'./assets/img/yellow.edit.png'
   },
 ]
 
-const game= document.querySelector('.game')
+const game= document.querySelector('game')
 //game
 //loop over card array + create image elements
   for (let i = 0; i < cardArray.length; i++){
