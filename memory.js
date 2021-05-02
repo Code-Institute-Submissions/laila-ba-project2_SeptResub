@@ -4,51 +4,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
 const cardArray = [
   {
     name:'black',
-    img:'./assets/img/black.edit.png'
+    img:'img/black.edit.png'
   },
   {
     name:'black',
-    img:'./assets/img/black.edit.png'
+    img:'img/black.edit.png'
   },
   {
     name:'blue',
-    img:'./assets/img/blue.edit.png'
+    img:'img/blue.edit.png'
   },
   {
     name:'blue',
-    img:'./assets/img/blue.edit.png'
+    img:'img/blue.edit.png'
   },
   {
     name:'green',
-    img:'./assets/img/green.edit.png'
+    img:'img/green.edit.png'
   },
   {
     name:'green',
-    img:'./assets/img/green.edit.png'
+    img:'img/green.edit.png'
   },
   {
     name:'orange',
-    img:'./assets/img/orange.edit.png'
+    img:'img/orange.edit.png'
   },
   {
     name:'orange',
-    img:'./assets/img/orange.edit.png'
+    img:'img/orange.edit.png'
   },
   {
     name:'purple',
-    img:'./assets/img/purple.edit.png'
+    img:'img/purple.edit.png'
   },
   {
     name:'purple',
-    img:'./assets/img/purple.edit.png'
+    img:'img/purple.edit.png'
   },
   {
     name:'yellow',
-    img:'./assets/img/yellow.edit.png'
+    img:'img/yellow.edit.png'
   },
   {
     name:'yellow',
-    img:'./assets/img/yellow.edit.png'
+    img:'img/yellow.edit.png'
   },
 ]
 
