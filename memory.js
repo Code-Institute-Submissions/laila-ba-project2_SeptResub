@@ -62,5 +62,5 @@ const game= document.querySelector('game')
     //card.addEventListener('click',flipcard)
     game.appendChild(card)
   }
-}
+})
 createBoard()
