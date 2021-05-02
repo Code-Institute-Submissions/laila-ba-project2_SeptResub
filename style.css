@@ -1,6 +1,6 @@
 body{
   background: url(img/sky2.jpg)no-repeat center center;
-
+  background-size:180%;
 }
 header{
   position:absolute;
@@ -74,9 +74,41 @@ footer a:hover{
   border-radius:0;
   font-size:30px;
 }
+.modal-content {
+  background: url("img/sky2.jpg") top right;
+  background-size: 190%;
+
+}
+
+.modal-body li{
+  justify-content: center;
+  border-bottom: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+
+}
+.modal-header {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-bottom: transparent;
+}
+.modal-footer {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: transparent;
+}
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  height:300px;
+  width:400px;
+}
 @media screen and (max-width: 768px){
   header{
     position:relative;
+
 
   }
 }
