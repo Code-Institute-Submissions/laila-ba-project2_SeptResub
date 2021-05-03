@@ -97,7 +97,7 @@ function checkForMatch(){
     cardsChosenId= [];
     resultDisplay.textContent= cardsWon.length;
     //gives a point for every match
-    if (cardsWon.length === cardsList.length/2){
+    if (cardsWon.length === cardList.length/2){
       //collected al cards in array
       resultDisplay.textContent = 'Congratulations! You found all the matches';
     }
