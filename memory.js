@@ -53,7 +53,7 @@ const cardList = [
   }
 
  ];
-                          }
+}
 
 cardList.sort(()=> 0.5 - Math.random());
 
