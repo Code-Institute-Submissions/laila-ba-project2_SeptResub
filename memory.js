@@ -56,7 +56,7 @@ const cardList = [
 cardList.sort(()=> 0.5 - Math.random())
 
 const game= document.querySelector('.game')
-const resultDisplay= document.querySelector('#result'))
+const resultDisplay= document.querySelector('#result')
 var cardsChosen = []
 var cardsChosenId= []
 var cardsWon = []
