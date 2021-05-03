@@ -35,6 +35,12 @@ header{
   height: 0 auto;
 
 }
+.game{
+  display:flex;
+  flex-wrap:wrap;
+  height:300px;
+  width:400px;
+}
  nav a{
   color:#FDCB00;
 }
