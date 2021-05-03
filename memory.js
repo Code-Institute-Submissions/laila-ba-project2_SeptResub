@@ -1,9 +1,8 @@
-console.log("hello");
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
 
 //cards
-const cardArray = [
+const cardList = [
   {
     name:'black',
     img:'./assets/img/black.edit.png'
@@ -54,20 +53,22 @@ const cardArray = [
   },
 ]
 
-cardArray.sort(()=> 0.5 - Math.random())
+cardList.sort(()=> 0.5 - Math.random())
 
-const game= document.querySelector('game')
+const game= document.querySelector('.game')
 const resultDisplay= document.querySelector(''#result')
 var cardsChosen = []
 var cardsChosenId= []
 var cardsWon = []
 //game
 //loop over card array + create image elements
-  for (let i = 0; i < cardArray.length; i++){
+function createGame(){
+  for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img')
     card.setAttribute('src', './assets/img/random.png')
+    //give each card data id
     card.setAttribute('data-id', i)
-    //card.addEventListener('click',flipCard)
+    card.addEventListener('click',flipCard)
     game.appendChild(card)
   }
 }
@@ -93,7 +94,7 @@ function checkForMatch(){
     cardsChosenId= []
     resultDisplay.textContent= cardsWon.length
     //gives a point for every match
-    if (cardsWon.length === cardsArray.length/2){
+    if (cardsWon.length === cardsList.length/2){
       //collected al cards in array
       resultDisplay.textContent = 'Congratulations! You found all the matches'
     }
@@ -101,14 +102,14 @@ function checkForMatch(){
 //flips cards
 function flipCard(){
 var cardId= this.getAttribute('data-id')
-cardsChosen.push(cardArray[cardId].name)
+cardsChosen.push(cardList[cardId].name)
 cardsChosenId.push(cardId)
 //add img to square
-this.setattribute('src', cardArray[cardId].img)
+this.setattribute('src', cardList[cardId].img)
 
 if (cardsChosen.length ===2){
   //so it doesnt happen too quickly
   setTimeout(checkForMatch,500)
 }
 }
-createBoard()
+createGame()
