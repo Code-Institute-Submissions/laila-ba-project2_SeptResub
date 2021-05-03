@@ -60,6 +60,7 @@ const resultDisplay= document.querySelector(''#result')
 var cardsChosen = []
 var cardsChosenId= []
 var cardsWon = []
+
 //game
 //loop over card array + create image elements
 function createGame(){
@@ -76,8 +77,8 @@ function createGame(){
 //will check for matches
 function checkForMatch(){
   var cards= document.querySelectorAll('img')
-  const optionOne = cardsChosen[0]
-  const optionTwo = cardsChosen[1]
+  const optionOne = cardsChosenId[0]
+  const optionTwo = cardsChosenId[1]
 
   if (cardsChosen[0] === cardsChosen[1]){
     //alert('You found a match!')
@@ -104,9 +105,8 @@ function flipCard(){
 var cardId= this.getAttribute('data-id')
 cardsChosen.push(cardList[cardId].name)
 cardsChosenId.push(cardId)
-//add img to square
+//add img to square based on cardID
 this.setattribute('src', cardList[cardId].img)
-
 if (cardsChosen.length ===2){
   //so it doesnt happen too quickly
   setTimeout(checkForMatch,500)
