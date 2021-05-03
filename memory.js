@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+
 
 //cards
 const cardList = [
@@ -51,7 +51,6 @@ const cardList = [
     name:'yellow',
     img:'./assets/img/yellow.edit.png'
   }
-
  ];
 
 
