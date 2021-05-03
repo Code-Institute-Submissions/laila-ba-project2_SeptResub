@@ -108,7 +108,7 @@ var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
 //add img to square based on cardID
-this.setattribute('src', cardList[cardId].img);
+this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length ===2){
   //so it doesnt happen too quickly
   setTimeout(checkForMatch,500);
