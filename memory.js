@@ -110,6 +110,6 @@ this.setattribute('src', cardList[cardId].img)
 if (cardsChosen.length ===2){
   //so it doesnt happen too quickly
   setTimeout(checkForMatch,500)
+  }
 }
-})
 createGame()
