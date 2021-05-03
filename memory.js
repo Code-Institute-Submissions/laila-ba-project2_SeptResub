@@ -50,7 +50,7 @@ const cardList = [
   {
     name:'yellow',
     img:'./assets/img/yellow.edit.png'
-  },
+  }
 ]
 
 cardList.sort(()=> 0.5 - Math.random())
