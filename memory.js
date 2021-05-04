@@ -79,7 +79,7 @@ function createGame(){
 
 //will check for matches
 function checkForMatch(){
-  var cards= document.querySelectorAll('img');
+  var cards= document.querySelectorAll('game-cards');
   const optionOne = cardsChosenId[0];
   const optionTwo = cardsChosenId[1];
   if (cardsChosen[0] === cardsChosen[1]){
