@@ -81,7 +81,6 @@ function checkForMatch(){
   var cards= document.querySelectorAll('img');
   const optionOne = cardsChosenId[0];
   const optionTwo = cardsChosenId[1];
-
   if (cardsChosen[0] === cardsChosen[1]){
     alert('You found a match!')
     cards[optionOne].setAttribute('src','./assets/img/blank.png');
@@ -89,10 +88,11 @@ function checkForMatch(){
     cardsWon.push(cardsChosen);
   } else{
     //flip the card around to play again
-    cards[optionOne].setAttribute('src','./assets/img/random.png' );
-    cards[optionTwo].setAttribute('src','./assets/img/random.png' );
+    cards[optionOne].setAttribute('src','./assets/img/random.png');
+    cards[optionTwo].setAttribute('src','./assets/img/random.png');
     alert('sorry, try again')
   }
+  //clear the card array and start again
     cardsChosen=[];
     cardsChosenId= [];
     resultDisplay.textContent= cardsWon.length;
