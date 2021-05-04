@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-});
+
 //cards
 const cardList = [
   {
@@ -115,3 +115,4 @@ if (cardsChosen.length ===2){
   }
 }
 createGame();
+});
