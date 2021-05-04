@@ -67,7 +67,7 @@ var cardsWon = [];
 //loop over card array + create image elements
 function createGame(){
   for (let i = 0; i < cardList.length; i++){
-    var card = document.createElement('game-card');
+    var card = document.createElement('img');
     card.setAttribute('src', './assets/img/random.png');
     //give each card data id
     card.setAttribute('data-id', i);
@@ -78,7 +78,7 @@ function createGame(){
 
 //will check for matches
 function checkForMatch(){
-  var cards= document.querySelectorAll('game-card');
+  var cards= document.querySelectorAll('img');
   const optionOne = cardsChosenId[0];
   const optionTwo = cardsChosenId[1];
   if (cardsChosen[0] === cardsChosen[1]){
@@ -108,7 +108,7 @@ var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
 //add img to square based on cardID
-this.setAttribute('src', cardList[cardId].'game-card');
+this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
   //so it doesnt happen too quickly
   setTimeout(checkForMatch,500);
