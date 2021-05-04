@@ -69,7 +69,7 @@ function createGame(){
   for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img');
     card.setAttribute('src', './assets/img/random.png');
-    card.setAttribute('class','game-cards' './assets/img/random.png');
+    card.setAttribute('class','game-cards');
     //give each card data id
     card.setAttribute('data-id', i);
     card.addEventListener('click',flipCard);
