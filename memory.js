@@ -83,7 +83,7 @@ function checkForMatch(){
   const optionTwo = cardsChosenId[1];
 
   if (cardsChosen[0] === cardsChosen[1]){
-    //alert('You found a match!')
+    alert('You found a match!')
     cards[optionOne].setAttribute('src','./assets/img/blank.png');
     cards[optionTwo].setAttribute('src', './assets/img/blank.png');
     cardsWon.push(cardsChosen);
@@ -91,7 +91,7 @@ function checkForMatch(){
     //flip the card around to play again
     cards[optionOne].setAttribute('src','./assets/img/random.png' );
     cards[optionTwo].setAttribute('src','./assets/img/random.png' );
-    //alert('sorry, try again')
+    alert('sorry, try again')
   }
     cardsChosen=[];
     cardsChosenId= [];
