@@ -83,6 +83,8 @@ function checkForMatch(){
   console.log(cards);
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
+  console.log(optionOneId);
+    console.log(optionTwoId);
   if (cardsChosen[0] === cardsChosen[1]){
     alert('You found a match!')
     //cards[optionOne].setAttribute('src','./assets/img/blank.png');
