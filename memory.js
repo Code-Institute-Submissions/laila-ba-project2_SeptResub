@@ -79,9 +79,9 @@ function createGame(){
 
 //will check for matches
 function checkForMatch(){
-  var cards= document.querySelectorAll('game-cards');
-  const optionOne = cardsChosenId[0];
-  const optionTwo = cardsChosenId[1];
+  var cards= document.querySelectorAll('img');
+  const optionOneId = cardsChosenId[0];
+  const optionTwoId = cardsChosenId[1];
   if (cardsChosen[0] === cardsChosen[1]){
     alert('You found a match!')
     //cards[optionOne].setAttribute('src','./assets/img/blank.png');
@@ -89,8 +89,8 @@ function checkForMatch(){
     cardsWon.push(cardsChosen);
   } else{
     //flip the card around to play again
-    cards[optionOne].setAttribute('src','./assets/img/random.png');
-    cards[optionTwo].setAttribute('src','./assets/img/random.png');
+    cards[optionOneId].setAttribute('src','./assets/img/random.png');
+    cards[optionTwoId].setAttribute('src','./assets/img/random.png');
     alert('sorry, try again')
   }
   //clear the card array and start again
