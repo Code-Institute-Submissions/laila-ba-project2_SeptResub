@@ -89,6 +89,8 @@ function checkForMatch(){
     alert('You found a match!')
     //cards[optionOne].setAttribute('src','./assets/img/blank.png');
     //cards[optionTwo].setAttribute('src', './assets/img/blank.png');
+    console.log(cards[optionOneId]);
+    console.log(cards[optionTwoId]);
     cardsWon.push(cardsChosen);
   } else{
     //flip the card around to play again
