@@ -39,8 +39,8 @@ header{
   display:flex;
   flex-wrap:wrap;
   justify-content: center;
-  height:300px;
-  width:400px;
+  height:500px;
+  width:600px;
 }
  nav a{
   color:#FDCB00;
