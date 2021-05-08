@@ -47,16 +47,16 @@ header{
   width:250px;
   height: 0 auto;
 }
-.container {
+.game {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 0.5em;
-}
-img.game-cards{
   background: linear-gradient(to bottom, #5cf, #28e);
   border-radius: 1.5em;
+}
+img.game-cards{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
