@@ -64,12 +64,12 @@ header{
   height: 45em;
   margin-bottom: 6em;
   padding: 0.5em;
-  height:500px;
-  width:500px;
+  height:700px;
+  width:700px;
 }
 img.game-cards{
-  width: 100px;
-  height:100px;
+  width: 140px;
+  height:150px;
   border-radius: 0.5em;
 }
  nav a{
