@@ -71,6 +71,7 @@ img.game-cards{
   width: 140px;
   height:150px;
   border-radius: 0.5em;
+  padding: 0 5px;
 }
  nav a{
   color:#FDCB00;
