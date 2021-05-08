@@ -42,10 +42,10 @@ header{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 45em;
+  height: 70em;
   margin-bottom: 6em;
-  padding: 0.5em;
-  width: 35em;
+  padding: 5em;
+  width: 50em;
   height:300px;
   width:400px;
 }
