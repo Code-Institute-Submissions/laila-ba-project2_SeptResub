@@ -54,7 +54,7 @@ header{
   flex-direction: column;
   margin-top: 0.5em;
 }
-.game{
+img.game-cards{
   background: linear-gradient(to bottom, #5cf, #28e);
   border-radius: 1.5em;
   display: flex;
