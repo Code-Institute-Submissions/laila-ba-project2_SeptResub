@@ -63,7 +63,6 @@ img.game-cards{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 45em;
   margin-bottom: 6em;
   padding: 0.5em;
 }
