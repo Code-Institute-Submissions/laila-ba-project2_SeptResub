@@ -47,24 +47,26 @@ header{
   width:250px;
   height: 0 auto;
 }
-.game {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 0.5em;
+}
+.game{
   background: linear-gradient(to bottom, #5cf, #28e);
   border-radius: 1.5em;
-  height: 500px;
-  width: 500px;
-}
-img.game-cards{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  height: 45em;
   margin-bottom: 6em;
   padding: 0.5em;
+  width: 35em;
+  height:700px;
+  width:700px;
 }
  nav a{
   color:#FDCB00;
