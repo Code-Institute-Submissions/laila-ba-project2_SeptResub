@@ -55,11 +55,10 @@ header{
   margin-top: 0.5em;
   background: linear-gradient(to bottom, #5cf, #28e);
   border-radius: 1.5em;
-  height: 70em;
-  width: 70em;
+  height: 500px;
+  width: 500px;
 }
 img.game-cards{
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -67,8 +66,6 @@ img.game-cards{
   height: 45em;
   margin-bottom: 6em;
   padding: 0.5em;
-  height: 15em;
-  width: 15em;
 }
  nav a{
   color:#FDCB00;
