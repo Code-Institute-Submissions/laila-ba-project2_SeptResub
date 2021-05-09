@@ -163,7 +163,17 @@ footer a:hover{
 @media screen and (max-width: 768px){
   header{
     position:relative;
+  }
+}
 
-
+@media screen and (min-width: 550px){
+  .game{
+   height: 50em;
+   padding: 2em;
+   width: 50em;
+  }
+  img.game-cards{
+    height: 10em;
+    width: 10em;
   }
 }
