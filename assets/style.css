@@ -55,14 +55,12 @@ header{
   margin-top: 0.5em;
 }**/
 .game{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 0.5em;
   background: linear-gradient(to bottom, #5cf, #28e);
   border-radius: 1.5em;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   height: 45em;
   margin-bottom: 6em;
   padding: 1px;
@@ -70,10 +68,10 @@ header{
   width:700px;
 }
 img.game-cards{
-  width: 140px;
+  width: 150px;
   height:150px;
   border-radius: 0.5em;
-  padding: 0 5px;
+  padding-bottom: 10px;
 }
  nav a{
   color:#FDCB00;
