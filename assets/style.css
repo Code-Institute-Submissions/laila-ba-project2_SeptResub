@@ -25,7 +25,7 @@ body{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("./img/sky2.jpg") top right;
+  background: url("./img/sky2.jpg") no-repeat;
   /**background-size:180%;*/
 }
 header{
