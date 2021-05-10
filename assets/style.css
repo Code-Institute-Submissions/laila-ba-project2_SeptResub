@@ -177,12 +177,12 @@ footer a:hover{
 
 @media screen and (min-width: 550px){
   .game{
-   height: 50em;
+   height: 30em;
    padding: 2em;
-   width: 50em;
+   width: 30em;
   }
   img.game-cards{
-    height: 10em;
-    width: 10em;
+    height: 6em;
+    width: 6em;
   }
 }
