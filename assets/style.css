@@ -78,7 +78,7 @@ header{
 .game{
   background: linear-gradient(to bottom, #5cf, #28e);
   border-radius: 1.5em;
-  
+
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -92,7 +92,7 @@ header{
   height: 35em;
   margin-bottom: 6em;
   padding: 0.5em;
-  width:35em;
+  width:45em;
 }
 img.game-cards{
   cursor: pointer;
