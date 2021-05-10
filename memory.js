@@ -55,6 +55,7 @@ const cardList = [
  ];
 
 
+
 cardList.sort(()=> 0.5 - Math.random());
 
 const game= document.querySelector('.game');
@@ -63,6 +64,14 @@ var cardsChosen = [];
 var cardsChosenId= [];
 var cardsWon = [];
 
+const movesCount = document.querySelector(".moves-counter");
+let moves = 0;
+const reset = document.querySelector(".reset-btn");
+const timeCounter = document.querySelector(".timer");
+let time;
+let minutes = 0;
+let seconds = 0;
+let timeStart = false;
 //game
 //loop over card array + create image elements
 function createGame(){
@@ -120,5 +129,23 @@ if (cardsChosen.length === 2){
   setTimeout(checkForMatch,500);
   }
 }
+
+function timer() {
+  // Update the count every 1 second
+  time = setInterval(function() {
+    seconds++;
+      if (seconds === 60) {
+        minutes++;
+        seconds = 0;
+      }
+    // Update the timer in HTML with the time it takes the user to play the game
+    timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: " + minutes + " Mins " + seconds + " Secs" ;
+  }, 1000);
+}
+
+function stopTime() {
+  clearInterval(time);
+}
+
 createGame();
 });
