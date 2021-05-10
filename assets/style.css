@@ -78,14 +78,23 @@ header{
 .game{
   background: linear-gradient(to bottom, #5cf, #28e);
   border-radius: 1.5em;
-  display: flex;
+  height: 60vh;
+  width: 100%;
+  margin-top: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 35em;
   margin-bottom: 6em;
   padding: 0.5em;
-  width:35em;
+  width:35em;*/
 }
 img.game-cards{
   cursor: pointer;
@@ -159,7 +168,7 @@ footer a:hover{
   border-top: transparent;
 }
 /*DESKTOP*/
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
   .game  {
     height: 70em;
     width: 70em;
@@ -184,5 +193,10 @@ footer a:hover{
   img.game-cards{
     height: 6em;
     width: 6em;
+  }
+}*/
+@media screen and (max-width: 380px){
+  .game{
+    height: 45vh;
   }
 }
