@@ -136,7 +136,6 @@ footer a:hover{
 .modal-content {
   background: url("img/sky2.jpg") top right;
   background-size: 190%;
-
 }
 
 .modal-body li{
@@ -175,14 +174,14 @@ footer a:hover{
   }
 }
 
-@media screen and (min-width: 550px){
+/*@media screen and (min-width: 550px){
   .game{
    height: 30em;
    padding: 2em;
    width: 30em;
   }
   img.game-cards{
-    height: 6em;
-    width: 6em;
+    height: 10em;
+    width: 10em;
   }
-}
+}*/
