@@ -82,15 +82,15 @@ header{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 35em;
+  height: 45em;
   margin-bottom: 6em;
   padding: 0.5em;
-  width:35em;
+  width:45em
 }
 img.game-cards{
   cursor: pointer;
-  width: 7em;
-  height:7em;
+  width: 10em;
+  height:10em;
   border-radius: 0.5em;
   padding-bottom: 10px;
 }
