@@ -95,7 +95,8 @@ function checkForMatch(){
   console.log(optionOneId);
     console.log(optionTwoId);
   if (cardsChosen[0] === cardsChosen[1]){
-    alert('You found a match!')
+    alert('Its a match!')
+    movesCounter();
     //cards[optionOne].setAttribute('src','./assets/img/blank.png');
     //cards[optionTwo].setAttribute('src', './assets/img/blank.png');
     console.log(cards[optionOneId]);
@@ -105,7 +106,8 @@ function checkForMatch(){
     //flip the card around to play again
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
-    alert('sorry, try again')
+    alert('Sorry, try again')
+    movesCounter();
   }
   //clear the card array and start again
     cardsChosen=[];
@@ -115,6 +117,7 @@ function checkForMatch(){
     if (cardsWon.length === cardList.length/2){
       //collected al cards in array
       resultDisplay.textContent = 'Congratulations! You found all the matches';
+      stopTime();
     }
 }
 //flips cards
@@ -131,20 +134,41 @@ if (cardsChosen.length === 2){
 }
 
 function timer() {
-  // Update the count every 1 second
   time = setInterval(function() {
     seconds++;
       if (seconds === 60) {
         minutes++;
         seconds = 0;
       }
-    // Update the timer in HTML with the time it takes the user to play the game
+    // Update the timer in HTML
     timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: " + minutes + " Mins " + seconds + " Secs" ;
   }, 1000);
 }
 
 function stopTime() {
   clearInterval(time);
+}
+
+function resetEverything() {
+  //reset the minutes and seconds update inner HTML
+  stopTime();
+  timeStart = false;
+  seconds = 0;
+  minutes = 0;
+  timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: 00:00";
+
+ moves = 0;
+ movesCount.innerHTML = 0;
+
+ cardsChosen=[];
+ cardsChosenId= [];
+ createGame();
+}
+
+function movesCounter() {
+  movesCount.innerHTML ++;
+  // Keep track of the number of moves for every pair checked
+  moves ++;
 }
 
 createGame();
