@@ -158,7 +158,17 @@ footer a:hover{
   justify-content: center;
   border-top: transparent;
 }
-
+/*DESKTOP*/
+@media screen and (min-width: 800px) {
+  .game  {
+    height: 70em;
+    width: 70em;
+  }
+  img.game-cards {
+      height: 15em;
+      width: 15em;
+    }
+}
 @media screen and (max-width: 768px){
   header{
     position:relative;
