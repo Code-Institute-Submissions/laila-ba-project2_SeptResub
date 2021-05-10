@@ -168,7 +168,7 @@ footer a:hover{
   border-top: transparent;
 }
 /*DESKTOP*/
-/*@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
   .game  {
     height: 70em;
     width: 70em;
@@ -193,10 +193,5 @@ footer a:hover{
   img.game-cards{
     height: 6em;
     width: 6em;
-  }
-}*/
-@media screen and (max-width: 380px){
-  .game{
-    height: 45vh;
   }
 }
