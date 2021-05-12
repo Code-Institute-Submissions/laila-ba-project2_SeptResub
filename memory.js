@@ -67,11 +67,7 @@ var cardsWon = [];
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
 const reset = document.querySelector(".reset-btn");
-const timeCounter = document.querySelector(".timer");
-let time;
-let minutes = 0;
-let seconds = 0;
-let timeStart = false;
+
 //game
 //loop over card array + create image elements
 function createGame(){
@@ -117,7 +113,6 @@ function checkForMatch(){
     if (cardsWon.length === cardList.length/2){
       //collected al cards in array
       resultDisplay.textContent = 'Congratulations! You found all the matches';
-      stopTime();
     }
 }
 //flips cards
@@ -133,35 +128,12 @@ if (cardsChosen.length === 2){
   }
 }
 
-function timer() {
-  time = setInterval(function() {
-    seconds++;
-      if (seconds === 60) {
-        minutes++;
-        seconds = 0;
-      }
-    // Update the timer in HTML
-    timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: " + minutes + " Mins " + seconds + " Secs" ;
-  }, 1000);
-}
-
-function stopTime() {
-  clearInterval(time);
-}
-
 function resetEverything() {
   //reset the minutes and seconds update inner HTML
-  stopTime();
-  timeStart = false;
-  seconds = 0;
-  minutes = 0;
-  timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: 00:00";
-
- moves = 0;
- movesCount.innerHTML = 0;
-
- cardsChosen=[];
- cardsChosenId= [];
+  moves = 0;
+  movesCount.innerHTML = 0;
+  cardsChosen=[];
+  cardsChosenId= [];
  createGame();
 }
 
