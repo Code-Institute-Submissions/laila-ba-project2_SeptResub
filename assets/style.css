@@ -78,7 +78,6 @@ header{
 }
 .game{
   background: linear-gradient(to bottom, #5cf, #28e);
-  border-radius: 1.5em;
   width: 640px;
    height: 640px;
    margin: auto;
