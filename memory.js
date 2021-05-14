@@ -71,6 +71,9 @@ const reset = document.querySelector(".reset-btn");
 //game
 //loop over card array + create image elements
 function createGame(){
+  $("#start-game").click(function() {
+    $("#main-section").css("display", "none");
+    });
   for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img');
     card.setAttribute('src', './assets/img/random.png');
