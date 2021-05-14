@@ -73,7 +73,6 @@ header{
   width: 640px;
    height: 640px;
    margin: auto;
-   display: flex;
    justify-content: center;
     align-items: center;
    flex-wrap: wrap;
