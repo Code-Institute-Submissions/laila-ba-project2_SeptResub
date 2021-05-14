@@ -100,7 +100,7 @@ footer a{
 footer a:hover{
   color:#FD0000;
 }
-#start-game{
+.start-button{
   text-transform:uppercase;
   font-weight:800;
   color:#fff;
@@ -109,10 +109,10 @@ footer a:hover{
   font-size:20px;
   width:120px;
 }
-#start-game:hover{
+.start-button:hover{
 
 }
-#instructions{
+.instructions-button{
   text-transform:uppercase;
   font-weight:800;
   color:#fff;
