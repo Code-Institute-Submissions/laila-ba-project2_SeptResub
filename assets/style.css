@@ -68,6 +68,7 @@ header{
 }
 
 .game{
+  display:none;
   background: linear-gradient(to bottom, #5cf, #28e);
   width: 640px;
    height: 640px;
