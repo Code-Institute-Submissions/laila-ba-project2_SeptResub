@@ -72,7 +72,7 @@ const reset = document.querySelector(".reset-btn");
 //loop over card array + create image elements
 function createGame(){
   $("#start-game").click(function() {
-    $("#main-section").css("display", "none");
+    $(".game").css("display", "block");
     });
   for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img');
