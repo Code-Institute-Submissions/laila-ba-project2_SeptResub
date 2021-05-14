@@ -66,9 +66,10 @@ header{
 .reset-btn {
   background: red;
 }
-
-.game{
+.game-area{
   display:none;
+}
+.game{
   background: linear-gradient(to bottom, #5cf, #28e);
   width: 640px;
    height: 640px;
