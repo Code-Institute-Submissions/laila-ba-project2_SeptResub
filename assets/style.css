@@ -92,10 +92,10 @@ img.game-cards{
  nav a{
   color:#FDCB00;
 }
-footer a{
+.contact-links{
   color:#FD0000;
   text-align:center;
-  padding:0 20px;
+  margin-bottom:-3px;
 }
 footer a:hover{
   color:#FD0000;
