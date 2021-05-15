@@ -29,7 +29,7 @@ body{
   background-size:150%;
 }
 header{
-  position:absolute;
+  position:relative;
   z-index:10;
   width:100%;
 }
@@ -154,11 +154,11 @@ footer a:hover{
 }
 /*DESKTOP*/
 
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px){
   header{
     position:relative;
   }
-}
+}*/
 
 /*@media screen and (min-width: 550px){
   .game{
