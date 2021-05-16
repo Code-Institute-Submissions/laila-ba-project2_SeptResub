@@ -139,7 +139,7 @@ function resetEverything() {
   cardsChosen=[];
   cardsChosenId= [];
  createGame(resetEverything);
-  }
+})
 }
 console.log()
 function movesCounter() {
