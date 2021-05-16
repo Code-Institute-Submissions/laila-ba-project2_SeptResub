@@ -130,7 +130,8 @@ if (cardsChosen.length === 2){
   setTimeout(checkForMatch,500);
   }
 }
-reset.addEventListener("click", resetEverything)
+reset.addEventListener("click", resetEverything);
+
 function resetEverything() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
