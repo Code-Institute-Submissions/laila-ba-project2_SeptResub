@@ -60,9 +60,9 @@ cardList.sort(()=> 0.5 - Math.random());
 
 const game= document.querySelector('.game');
 const resultDisplay= document.querySelector('#result');
-var cardsChosen = [];
-var cardsChosenId= [];
-var cardsWon = [];
+let cardsChosen = [];
+let cardsChosenId= [];
+let cardsWon = [];
 
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
@@ -135,7 +135,7 @@ function resetEverything() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
   movesCount.innerHTML = 0;
-  resultDisplay= [];
+  cardsWon= [];
   cardsChosen=[];
   cardsChosenId= [];
  createGame(resetEverything);
