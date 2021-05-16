@@ -135,10 +135,10 @@ function resetEverything() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
   movesCount.innerHTML = 0;
-  cardsWon= [];
-  cardsChosen=[];
-  cardsChosenId= [];
- createGame(resetEverything);
+  cardsWon = [];
+  cardsChosen = [];
+  cardsChosenId = [];
+ createGame();
 }
 console.log()
 function movesCounter() {
