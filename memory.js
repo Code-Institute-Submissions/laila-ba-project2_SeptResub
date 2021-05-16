@@ -130,16 +130,14 @@ if (cardsChosen.length === 2){
   setTimeout(checkForMatch,500);
   }
 }
-
+reset.addEventListener("click", resetEverything)
 function resetEverything() {
-  $(".reset").click(function() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
   movesCount.innerHTML = 0;
   cardsChosen=[];
   cardsChosenId= [];
  createGame(resetEverything);
-})
 }
 console.log()
 function movesCounter() {
