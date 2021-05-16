@@ -161,6 +161,21 @@ footer a:hover{
   border-radius:5px;
   margin-top:-40px;
 }
+.effect-1{
+  border:0;
+  outline:none;
+  width:100%;
+  padding:7px 0;
+  border-bottom:
+}
+.effect-1 ~ .Focus-border{
+  position:absolute;
+  bottom:0;
+  left:50%;
+  width:0;
+  height:2px;
+  transition:0.4s;
+}
 /*DESKTOP*/
 
 @media screen and (max-width: 768px){
