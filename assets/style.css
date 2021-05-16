@@ -26,6 +26,7 @@ body{
       -ms-flex-direction: column;
           flex-direction: column;
   background: url("./img/sky3.png") no-repeat;
+  background-size:100%;
 }
 header{
   position:relative;
