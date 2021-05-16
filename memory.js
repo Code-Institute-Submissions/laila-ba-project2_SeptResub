@@ -132,12 +132,14 @@ if (cardsChosen.length === 2){
 }
 
 function resetEverything() {
+  $(".reset").click(function() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
   movesCount.innerHTML = 0;
   cardsChosen=[];
   cardsChosenId= [];
  createGame();
+  }
 }
 
 function movesCounter() {
