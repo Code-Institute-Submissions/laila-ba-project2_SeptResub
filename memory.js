@@ -138,10 +138,10 @@ function resetEverything() {
   movesCount.innerHTML = 0;
   cardsChosen=[];
   cardsChosenId= [];
- createGame();
+ createGame(resetEverything);
   }
 }
-
+console.log()
 function movesCounter() {
   movesCount.innerHTML ++;
   // Keep track of the number of moves for every pair checked
