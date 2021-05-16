@@ -135,6 +135,7 @@ function resetEverything() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
   movesCount.innerHTML = 0;
+  resultDisplay=0;
   cardsChosen=[];
   cardsChosenId= [];
  createGame(resetEverything);
