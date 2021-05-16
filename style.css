@@ -25,7 +25,7 @@ body{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("./img/sky3.png") no-repeat;
+  background: url("./img/sky4.png") no-repeat;
   background-size:100%;
 }
 header{
@@ -54,10 +54,7 @@ header{
   width:300px;
   height:auto 0;
 }
-.filler{
-  width:250px;
-  height:300px;
-}
+
 .text-center img{
   text-align: center;
   width:250px;
