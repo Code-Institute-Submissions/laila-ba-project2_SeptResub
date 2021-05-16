@@ -26,7 +26,7 @@ body{
       -ms-flex-direction: column;
           flex-direction: column;
   background: url("./img/sky3.png") no-repeat;
-  background-size:100%;
+  background-size:cover;
 }
 header{
   position:absolute;
@@ -129,8 +129,8 @@ footer a:hover{
   font-size:30px;
 }
 .modal-content {
-  background: url("img/sky2.jpg") top right;
-  background-size: 190%;
+  background: url("img/sky3.jpg") top right;
+  background-size: cover;
 }
 
 .modal-body li{
@@ -151,6 +151,15 @@ footer a:hover{
   -ms-flex-pack: center;
   justify-content: center;
   border-top: transparent;
+}
+.contact{
+  width:100%;
+  height:100vh;
+}
+.head{
+  background-color:#FFDA44;
+  border-radius:5px;
+
 }
 /*DESKTOP*/
 
