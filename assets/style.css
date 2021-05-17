@@ -126,7 +126,7 @@ footer a:hover{
 background:orange;
 border-radius:15px;
 }
-.game-area .moves-counter{
+.game-area p{
    max-width:120px;
 background:orange;
 border-radius:15px;
