@@ -177,6 +177,7 @@ footer a:hover{
 .container, .container-md, .container-sm {
     max-width: 650px;
     padding-top: 150px;
+  }
 }
 /*@media screen and (min-width: 550px){
   .game{
