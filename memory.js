@@ -121,8 +121,11 @@ function checkForMatch(){
 //flips cards
 function flipCard(){
 var cardId= this.getAttribute('data-id');
+console.log("cardId:", cardId);
 cardsChosen.push(cardList[cardId].name);
+console.log("cardsChosen:", cardsChosen)
 cardsChosenId.push(cardId);
+console.log("cardsChosenId:", cardsChosenId);
 //add img to square based on cardID
 this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
@@ -136,11 +139,8 @@ function resetEverything() {
   moves = 0;
   movesCount.innerHTML = 0;
   cardsWon = [];
-  console.log("cardsWon:", cardsWon);
   cardsChosen = [];
-  console.log("cardsChosen:", cardsChosen);
   cardsChosenId = [];
-  console.log("cardsChosenId:", cardsChosenId);
 
  createGame();
 }
