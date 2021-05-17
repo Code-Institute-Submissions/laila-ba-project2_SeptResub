@@ -120,7 +120,16 @@ footer a:hover{
   border-radius:50px;
   font-size:20px;
   width:190px;
-
+}
+.game-area h3{
+  max-width:120px;
+background:orange;
+border-radius:15px;
+}
+.game-area .moves-counter{
+   max-width:120px;
+background:orange;
+border-radius:15px;
 }
 .navbar-light .navbar-toggler{
   border:none;
