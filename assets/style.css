@@ -175,7 +175,7 @@ footer a:hover{
 }
 @media (min-width: 768px){
 .contact-container {
-    max-width: 650px;
+    max-width: 720px;
     padding-top: 150px;
   }
 }
