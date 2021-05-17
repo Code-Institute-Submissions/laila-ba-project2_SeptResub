@@ -60,9 +60,9 @@ cardList.sort(()=> 0.5 - Math.random());
 
 const game= document.querySelector('.game');
 const resultDisplay= document.querySelector('#result');
-let cardsChosen = [];
-let cardsChosenId= [];
-let cardsWon = [];
+var cardsChosen = [];
+var cardsChosenId= [];
+var cardsWon = [];
 
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
@@ -130,18 +130,18 @@ if (cardsChosen.length === 2){
   setTimeout(checkForMatch,500);
   }
 }
-reset.addEventListener("click", resetEverything);
 
 function resetEverything() {
+  $(".reset").click(function() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
   movesCount.innerHTML = 0;
-  cardsWon = [];
-  cardsChosen = [];
-  cardsChosenId = [];
- createGame();
+  cardsChosen=[];
+  cardsChosenId= [];
+ createGame(resetEverything);
+  }
 }
-console.log(resetEverything);
+console.log()
 function movesCounter() {
   movesCount.innerHTML ++;
   // Keep track of the number of moves for every pair checked
