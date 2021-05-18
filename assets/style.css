@@ -70,7 +70,7 @@ header{
   display:none;
 }
 .game{
-  background: #fff;
+  background: #FD0000;
   width: 640px;
    height: 640px;
    margin: auto;
@@ -129,7 +129,7 @@ font-weight:800;
 color:#000;
 background-color:#60AAF6;
 border:3px solid #000;
-border-radius:40px;
+border-radius:50px;
 font-size:20px;
 width:120px;
 }
@@ -139,7 +139,7 @@ width:120px;
   color:#000;
   background-color:#60AAF6;
   border:3px solid #000;
-  border-radius:40px;
+  border-radius:50px;
   font-size:20px;
   width:120px;
 }
