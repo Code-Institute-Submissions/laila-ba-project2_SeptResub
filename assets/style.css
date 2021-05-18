@@ -132,6 +132,7 @@ border:3px solid #000;
 border-radius:50px;
 font-size:20px;
 width:120px;
+margin:20px;
 }
 .moves-div{
   text-transform:uppercase;
@@ -142,6 +143,8 @@ width:120px;
   border-radius:50px;
   font-size:20px;
   width:120px;
+  margin:20px;
+
 }
 .navbar-light .navbar-toggler{
   border:none;
