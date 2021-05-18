@@ -298,6 +298,21 @@ width:120px;
   }
 }
 
+@media (max-width: 991px ){
+  .contact{
+    padding:50px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contactInfo{
+    margin-bottom:40px;
+  }
+  .container .contactInfo,
+  .contactForm{
+    width:100%;
+  }
+}
 /*@media screen and (min-width: 550px){
   .game{
    height: 30em;
