@@ -83,7 +83,6 @@ function createGame(){
     card.addEventListener('click',flipCard);
     game.appendChild(card);
   }
-  card.remove();
 }
 
 
