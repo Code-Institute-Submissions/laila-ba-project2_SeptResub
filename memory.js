@@ -139,7 +139,7 @@ function resetEverything() {
   moves = 0;
   movesCount.innerHTML = 0;
   cardsWon = [];
-  cardsWon.innerHTML = 0;
+  result.innerHTML = 0;
   cardsChosen = [];
   cardsChosenId = [];
  createGame();
