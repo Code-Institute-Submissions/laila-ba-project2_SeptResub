@@ -74,6 +74,14 @@ function createGame(){
   $("#start-game").click(function() {
     $(".game-area").css("display", "block");
     });
+  function removeCards(){
+    reset.addEventListener("click", resetEverything);
+    for (let i = 0; i < cardList.length; i++){
+      var card = document.createElement('img');
+      card.setAttribute('src', './assets/img/random.png');
+      card.setAttribute('class','game-cards');
+      card.remove();
+    }
   for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img');
     card.setAttribute('src', './assets/img/random.png');
@@ -83,6 +91,7 @@ function createGame(){
     card.addEventListener('click',flipCard);
     game.appendChild(card);
   }
+
 }
 
 
