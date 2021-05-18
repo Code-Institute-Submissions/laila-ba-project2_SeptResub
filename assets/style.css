@@ -70,7 +70,7 @@ header{
   display:none;
 }
 .game{
-  background: linear-gradient(to bottom, #5cf, #28e);
+  background: #fff;
   width: 640px;
    height: 640px;
    margin: auto;
