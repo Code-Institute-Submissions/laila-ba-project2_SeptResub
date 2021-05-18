@@ -83,8 +83,9 @@ function createGame(){
     card.addEventListener('click',flipCard);
     game.appendChild(card);
   }
+  card.remove();
 }
-card.remove();
+
 
 //will check for matches
 function checkForMatch(){
