@@ -133,7 +133,7 @@ if (cardsChosen.length === 2){
   setTimeout(checkForMatch,500);
   }
 }
-
+reset.addEventListener("click", resetEverything);
 function resetEverything() {
   //reset the minutes and seconds update inner HTML
   moves = 0;
@@ -150,6 +150,5 @@ function movesCounter() {
   // Keep track of the number of moves for every pair checked
   moves ++;
 }
-reset.addEventListener("click", resetEverything);
 createGame();
 });
