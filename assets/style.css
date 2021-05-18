@@ -25,7 +25,7 @@ body{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("./img/sky3.png") no-repeat;
+  background: url("./img/sky5.gif") no-repeat;
   background-size:cover;
 }
 header{
@@ -108,9 +108,10 @@ footer a:hover{
   border-radius:50px;
   font-size:20px;
   width:120px;
+  transition: .2s ease-in-out 0s;
 }
 #start-game:hover{
-
+transform: scale(1.10);
 }
 #instructions{
   text-transform:uppercase;
@@ -147,7 +148,7 @@ width:120px;
   font-size:30px;
 }
 .modal-content {
-  background: url("img/sky3.png") top right;
+  background: url("img/sky5.gif") top right;
   background-size: cover;
 }
 
@@ -171,148 +172,67 @@ width:120px;
   border-top: transparent;
 }
 /*CONTACT FORM*/
-#contact{
-  position:relative;
-  min-height:100vh;
-  padding:50px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
+.contact-form{
+width: 85%;
+max-width:600px;
+background:#eef7fc;
+position:absolute;
+top:30%;
+transform: translate(-50%, -50%)
+padding:30px 40px;
+box-sizing:border-box;
+border-radius:8px;
+text-align: center;
 }
-
-#contact .content{
-  max-width:800px;
-  text-align:center;
+.contact-form h1{
+  margin-top: 20px;
+  color: #000;
+  text-transform: uppercase;
 }
-#contact .content h2{
-  text-align:center;
-  font-size:60px;
-  color:#fff;
-  letter-spacing:4px;
-  padding-top:40px;
-  padding-bottom:10px;
+.txtb{
+  border:1px solid #2f9eda;
+  margin:20px;
+  padding:12px 18px;
+  border-radius: 8px;
 }
-#contact .content p{
-  font-weight:300;
-  color:#fff;
+.txtb label{
+  display:block;
+  text-align:left;
+  text-transform: uppercase;
+  font-size:14px;
 }
-.contactcontainer{
+.txtb input, .txtb textarea{
   width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin-top:30px;
-}
-.container .contactInfo{
-  width:30%;
-  display:flex;
-  flex-direction: column;
-}
-.container .contactInfo .box{
-  position:relative;
-  padding:20px 0;
-  display:flex;
-}
-.container .contactInfo .box .icon{
-  min-width:60px;
-  height:60px;
-  color:#fff;
-  background:#14A8D9;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  border-radius:50%;
-  font-size:22px;
-}
-.container .contactInfo .box .text{
-  display:flex;
-  margin-left:20px;
-  font-size:16px;
-  color:#fff;
-  flex-direction:column;
-  font-weight:300;
-}
-.container .contactInfo .box .text h3{
-  color:#fff;
-}
-.contactForm{
-  width:40%;
-  padding:40px;
-  background:#fff;
-}
-.contactForm h2{
-  font-size:30px;
-  color:#333;
-  font-weight:500;
-}
-.contactForm .inputBox{
-  position:relative;
-  width:100%;
-  margin-top:10px;
-}
-.contactForm .inputBox input,
-.contactForm .inputBox textarea{
-  width:100%;
-  padding:5px 0;
-  font-size:16px;
-  margin:10px 0;
   border:none;
-  border-bottom:2px solid #333;
+  background:none;
   outline:none;
-  resize:none;
-}
-.contactForm .inputBox span{
-  position:absolute;
-  left:0;
-  padding:5px 0;
-  font-size:16px;
-  margin:10px 0;
-  pointer-events: none;
-  transition:0.5s;
-  color:#666;
-}
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:focus ~ span{
-  color:#14A8D9;
-  font-size:12px;
-  transform:translateY(-20px);
-}
-.contactForm .inputBox input[type="submit"]{
-  width:100px;
-  background:#00bcd4;
-  color:#fff;
-  border:none;
-  cursor:pointer;
-  padding:10px;
   font-size:18px;
+  margin-top:6px;
 }
-
+.btn{
+  color:#fff;
+  background-color:#2323FB;
+  text-transform: uppercase;
+  transition: .2s ease-in-out 0s;
+  margin-bottom:10px;
+}
+.btn:hover{
+  transform: scale(1.10);
+  color:#fff;
+}
 /*DESKTOP*/
 
 @media screen and (max-width: 768px){
   header{
     position:relative;
   }
+  .contact-form{
+    position:relative;
+    top:10px;
+  }
 }
 
-@media (max-width: 991px ){
-  .contact{
-    padding:50px;
-  }
-  .container{
-    flex-direction: column;
-  }
-  .container .contactInfo{
-    margin-bottom:40px;
-  }
-  .container .contactInfo,
-  .contactForm{
-    width:100%;
-  }
-}
+
 /*@media screen and (min-width: 550px){
   .game{
    height: 30em;
