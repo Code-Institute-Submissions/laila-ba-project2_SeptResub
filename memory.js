@@ -84,6 +84,7 @@ function createGame(){
     game.appendChild(card);
   }
 }
+card.remove();
 
 //will check for matches
 function checkForMatch(){
