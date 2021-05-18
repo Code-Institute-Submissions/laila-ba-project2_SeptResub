@@ -83,9 +83,7 @@ function createGame(){
     card.addEventListener('click',flipCard);
     game.appendChild(card);
   }
-
 }
-
 
 //will check for matches
 function checkForMatch(){
@@ -137,6 +135,8 @@ if (cardsChosen.length === 2){
 }
 reset.addEventListener("click", resetEverything);
 function resetEverything() {
+  game.innerHTML = "";
+  createGame(game, cardList);
   //reset the minutes and seconds update inner HTML
   moves = 0;
   movesCount.innerHTML = 0;
@@ -144,7 +144,6 @@ function resetEverything() {
   result.innerHTML = 0;
   cardsChosen = [];
   cardsChosenId = [];
- createGame();
 }
 
 function movesCounter() {
