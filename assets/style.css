@@ -226,6 +226,24 @@ text-align: center;
   transform: scale(1.10);
   color:#fff;
 }
+.contact-links {
+  margin-bottom: -3px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+footer{
+  display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+}
 /*DESKTOP*/
 
 @media screen and (max-width: 768px){
