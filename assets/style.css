@@ -251,8 +251,8 @@ footer{
     top:10px;
   }
   .game{
-    height: 0 auto;
-    max-width: 545px;
+    height: 400px;
+    max-width: 350px;
   }
 }
 
