@@ -251,12 +251,16 @@ footer{
     top:10px;
   }
 }
-@media screen and (max-width: 550px){
+/*Small screens*/
+@media screen and (max-width: 400px){
   .game{
     height: 400px;
     max-width: 350px;
   }
 }
-
-
-@media screen and (min-width: 550px){
+@media screen and (min-width: 400px){
+  .game{
+    height: 500px;
+    max-width: 450px;
+  }
+}
