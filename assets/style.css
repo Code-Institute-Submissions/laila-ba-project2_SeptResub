@@ -250,10 +250,10 @@ footer{
     position:relative;
     top:10px;
   }
-  .game{
+/*  .game{
     height: 640px;
     max-width:640px;
-  }
+  }*/
 }
 /*Small screens*/
 @media screen and (max-width: 300px){
