@@ -53,7 +53,13 @@ header{
   width:300px;
   height:auto 0;
 }
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
 
+}
 .text-center img{
   text-align: center;
   width:250px;
@@ -247,8 +253,8 @@ footer{
 }
 
 
-/*@media screen and (min-width: 550px){
-  .game{
+@media screen and (min-width: 550px){
+  /*.game{
    height: 30em;
    padding: 2em;
    width: 30em;
@@ -256,5 +262,8 @@ footer{
   img.game-cards{
     height: 10em;
     width: 10em;
+  }*/
+  .navbar-collapse{
+    background-color:#60AAF6;
   }
-}*/
+}
