@@ -254,7 +254,7 @@ footer{
 
 
 @media screen and (min-width: 550px){
-  /*.game{
+  .game{
    height: 30em;
    padding: 2em;
    width: 30em;
@@ -262,8 +262,5 @@ footer{
   img.game-cards{
     height: 10em;
     width: 10em;
-  }*/
-  .navbar-collapse{
-    background-color:#60AAF6;
   }
 }
