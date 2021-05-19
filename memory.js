@@ -94,10 +94,7 @@ function checkForMatch(){
   console.log(optionOneId);
     console.log(optionTwoId);
   if (cardsChosen[0] === cardsChosen[1]){
-    alert('Its a match!')
     movesCounter();
-    //cards[optionOne].setAttribute('src','./assets/img/blank.png');
-    //cards[optionTwo].setAttribute('src', './assets/img/blank.png');
     console.log(cards[optionOneId]);
     console.log(cards[optionTwoId]);
     cardsWon.push(cardsChosen);
@@ -105,7 +102,6 @@ function checkForMatch(){
     //flip the card around to play again
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
-    alert('Sorry, try again')
     movesCounter();
   }
   //clear the card array and start again
