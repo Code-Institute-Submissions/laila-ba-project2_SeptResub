@@ -107,10 +107,12 @@ function checkForMatch(){
   //clear the card array and start again
     cardsChosen=[];
     cardsChosenId= [];
+
     resultDisplay.textContent= cardsWon.length;
     //gives a point for every match
     if (cardsWon.length === cardList.length/2){
       //collected al cards in array
+      $("#win-message").removeClass("d-none")
       resultDisplay.textContent = 'Congratulations! You found all the matches';
     }
 }
