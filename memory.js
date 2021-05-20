@@ -112,6 +112,7 @@ function checkForMatch(){
     //gives a point for every match
     if (cardsWon.length === cardList.length/2){
       //collected al cards in array
+      $(".game-area").css("display", "none");
       $("#win-message").removeClass("d-none")
     }
 }
