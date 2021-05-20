@@ -113,7 +113,6 @@ function checkForMatch(){
     if (cardsWon.length === cardList.length/2){
       //collected al cards in array
       $("#win-message").removeClass("d-none")
-      resultDisplay.textContent = 'Congratulations! You found all the matches';
     }
 }
 //flips cards
