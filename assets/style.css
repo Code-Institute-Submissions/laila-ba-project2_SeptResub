@@ -180,6 +180,9 @@ margin:20px;
   font-weight: 800;
   font-size:25px;
   text-transform:uppercase;
+  color:#000;
+  background-color: #FDCB00;
+
 
 }
 .modal-content {
@@ -278,7 +281,7 @@ text-align: center;
   }
   .text-center img {
     text-align: center;
-    width: 200px;
+    /*width: 200px;*/
   }
   img .game-cards{
     width: calc(25% - 10px);
