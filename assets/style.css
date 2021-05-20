@@ -187,12 +187,11 @@ margin:20px;
 }
 /*CONTACT FORM*/
 .contact-form{
-width: 85%;
-max-width:600px;
+width: 600px;
 background: #60AAF6;
 border: 3px solid #fff;
-position:absolute;
-top:30%;
+position:relative;
+top:200px;
 transform: translate(-50%, -50%)
 padding:30px 40px;
 box-sizing:border-box;
@@ -249,14 +248,18 @@ footer{
   .contact-form{
     position:relative;
     top:10px;
+    width:95%;
   }
-/*  .game{
-    height: 640px;
-    max-width:640px;
-  }*/
+  .wrapper {
+    min-height: 66vh;
+}
+  .game{
+    height: 400px;
+    max-width:300px;
+  }
 }
 /*Small screens*/
-@media screen and (max-width: 300px){
+/*@media screen and (max-width: 300px){
   .game{
     height: 400px;
     max-width: 300px;
