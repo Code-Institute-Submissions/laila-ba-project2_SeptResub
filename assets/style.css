@@ -234,6 +234,7 @@ text-align: center;
 }
 
 footer{
+  position:sticky;
 }
 /*DESKTOP*/
 
