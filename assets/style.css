@@ -262,7 +262,7 @@ text-align: center;
 
 /*DESKTOP*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 700px){
   header{
     position:relative;
   }
@@ -283,7 +283,7 @@ text-align: center;
     text-align: center;
     /*width: 200px;*/
   }
-  img .game-cards{
+  img.game-cards{
     width: calc(25% - 10px);
     height: calc(30% - 10px);
   }
