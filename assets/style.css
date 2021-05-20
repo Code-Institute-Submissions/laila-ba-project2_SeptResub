@@ -101,14 +101,27 @@ img.game-cards{
  nav a{
   color:#FDCB00;
 }
-.contact-links{
-  color:#FD0000;
-  text-align:center;
-  margin-bottom:-3px;
+.fa-instagram{
+  color: #2323FB;
+  padding:0 15px;
 }
-footer a:hover{
-  color:#FD0000;
+.fa-linkedin{
+  color:#FFDA44;
+  padding:0 15px;
 }
+.fa-github{
+  color:#FD0000;
+  padding:0 15px;
+}
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover{
+  transform: scale(1.10);
+}
+footer{
+  position:sticky;
+}
+
 #start-game{
   text-transform:uppercase;
   font-weight:800;
@@ -236,9 +249,6 @@ text-align: center;
   color:#fff;
 }
 
-footer{
-  position:sticky;
-}
 /*DESKTOP*/
 
 @media screen and (max-width: 768px){
@@ -255,7 +265,15 @@ footer{
 }
   .game{
     height: 400px;
-    max-width:300px;
+    max-width:325px;
+  }
+  .text-center img {
+    text-align: center;
+    width: 200px;
+  }
+  img .game-cards{
+    width: calc(25% - 10px);
+    height: calc(30% - 10px);
   }
 }
 /*Small screens*/
