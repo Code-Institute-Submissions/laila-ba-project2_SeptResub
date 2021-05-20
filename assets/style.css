@@ -32,8 +32,6 @@ header{
   z-index:10;
   width:100%;
 }
-.wrapper {
-  min-height: 100%;
 
 .navbar {
   padding: 0 40px;
