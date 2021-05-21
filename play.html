@@ -46,6 +46,55 @@
               <button type="button" id="start-game">Play</button>
               </div>
             </div>
+            <div class="col-lg-3">
+                <div class="instructions-button">
+              <button type="button" class="btn btn-primary" id="instructions" data-toggle="modal" data-target="#exampleModal">Instructions</button>
+                </div>
+            </div>
+          </div>
+<div class ="game-area">
+  <div class="row mt-5 justify-content-center">
+    <div class="score-div">
+        <p> Score:<span id="result"></span></p>
+    </div>
+    <div class="moves-div">
+      <p> Moves:<span class="moves-counter">0</span></p>
+    </div>
+  </div>
+     <div class="reset">
+       <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+     </div>
+     <div class="d-none" id="win-message">
+       <div class="alert alert-light" role="alert">
+  Congratulations! You found all the matches!
+</div>
+     </div>
+    <div class="game"></div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">How To Play</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <ul class="list-unstyled">
+         <li class="list-group-item">The objective of the game is to find all the matching pairs.<br>
+         Test your memory with this memory game. On the game board, there are always two identical images. Start the game by flipping a card. Then try to find another card that has the same image as the first. If you can't find a pair, the flipped cards will be flipped back with the face down.  Try to remember these images as it becomes easier to find pairs the longer you play.<br>
+        To start the game click 'Play'</li>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </div>
 <footer>
