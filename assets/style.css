@@ -9,7 +9,7 @@
 }
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+
 }
 
 body{
@@ -41,13 +41,14 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin:200px 0;
+  margin:100px 0;
   flex-wrap:initial;
+
 }
 .col-1{
   flex-basis:40%;
   position:relative;
-  margin-left:50px;
+  margin-left:230px;
 }
 .col-1 h2{
   color: #000;
@@ -55,7 +56,8 @@ header{
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
-  margin: 20px 0 10px;
+  margin: 20px 0 0;
+  background-color: #60AAF6;;
 }
 .col-1 h2 span{
     color: #fff;
@@ -63,8 +65,9 @@ header{
     font-weight: 600;
 }
 .col-1 p{
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #60AAF6;;
 }
 .col-2{
   position:relative;
@@ -73,7 +76,7 @@ header{
   align-items: center;
 }
 .col-2 .toad{
-  width:90%;
+  width:100%;
 
 }
 section{
@@ -374,22 +377,24 @@ text-align: center;
   .fa-github{
   font-size:40px;
   }
+  .index .row{
+    margin: 15px 0;
+  }
+  .col-2{
+    flex-basis:100%;
+    margin-bottom:50px;
+  }
+  .col-1 p {
+    font-size:12px;
+    flex-basis:100%;
+    margin-bottom:50px;
+  }
+    .col-1{
+      margin-left:15px;
+      margin-bottom:40px;
+    }
+    .col-2 img{
+      max-width:300px;
+    }
 }
 @media (max-width: 560px){
-  .content .info h2{
-    font-size: 35px;
-    line-height: 40px;
-  }
-
-  .content .info h2 span{
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  .content .info p{
-    font-size: 14px;
-  }
-  .content{
-    margin-top:40px
-  }
-}
