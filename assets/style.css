@@ -41,15 +41,14 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin:120px 0;
-  max-width:1900px;
+  margin:120px 10px 120px 250px;
+  max-width:999px;
   flex-wrap:initial;
 
 }
 .col-1{
-  flex-basis:45%;
+  flex-basis:60%;
   position:relative;
-  margin-left:230px;
 }
 .col-1 h2{
   color: #000;
