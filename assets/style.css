@@ -9,6 +9,7 @@
 }
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -64,14 +65,6 @@ header{
   font-size: 16px;
   font-weight: 500;
 }
-.color-box{
-position:absolute;
-right:0;
-top:0;
-border-radius: 20px 0 0 20px;
-height:100%;
-width:80%;
-}
 .col-2{
   position:relative;
   flex-basis: 60%;
@@ -82,18 +75,15 @@ width:80%;
   width:90%;
 
 }
-/*section{
+section{
   position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: url("./img/index-toad.png")no-repeat;
-  background-size: 400px;
   background-position: center;
-}*/
-
+}
 
 .navbar {
   padding: 0 40px;
