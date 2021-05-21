@@ -68,30 +68,6 @@ const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
 const reset = document.querySelector(".reset-btn");
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("#start-game").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
 //game
 //loop over card array + create image elements
 function createGame(){
@@ -164,5 +140,29 @@ function movesCounter() {
   // Keep track of the number of moves for every pair checked
   moves ++;
 }
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#start-game").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 createGame();
 });
