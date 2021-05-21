@@ -37,7 +37,7 @@ header{
   min-height: 85vh;
   margin-top:70px;
 }
-.row{
+.index .row{
   display:flex;
   justify-content:space-between;
   align-items:center;
