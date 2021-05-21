@@ -42,7 +42,7 @@ header{
   justify-content:space-between;
   align-items:center;
   margin:200px 0;
-  flex-wrap:none;
+  flex-wrap:initial;
 }
 .col-1{
   flex-basis:40%;
