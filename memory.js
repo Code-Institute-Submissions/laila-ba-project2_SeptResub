@@ -68,11 +68,16 @@ const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
 const reset = document.querySelector(".reset-btn");
 
+function pageScroll() {
+    window.scrollBy(0,1);
+    scrolldelay = setTimeout(pageScroll,10);
+}
 //game
 //loop over card array + create image elements
 function createGame(){
   $("#start-game").click(function() {
     $(".game-area").css("display", "block");
+    pageScroll()
     });
   for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img');
