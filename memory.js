@@ -88,15 +88,10 @@ function createGame(){
 //will check for matches
 function checkForMatch(){
   var cards= document.querySelectorAll('img.game-cards');
-  console.log(cards);
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
-  console.log(optionOneId);
-    console.log(optionTwoId);
   if (cardsChosen[0] === cardsChosen[1]){
     movesCounter();
-    console.log(cards[optionOneId]);
-    console.log(cards[optionTwoId]);
     cardsWon.push(cardsChosen);
   } else{
     //flip the card around to play again
@@ -118,11 +113,8 @@ function checkForMatch(){
 //flips cards
 function flipCard(){
 var cardId= this.getAttribute('data-id');
-console.log("cardId:", cardId);
 cardsChosen.push(cardList[cardId].name);
-console.log("cardsChosen:", cardsChosen)
 cardsChosenId.push(cardId);
-console.log("cardsChosenId:", cardsChosenId);
 //add img to square based on cardID
 this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
