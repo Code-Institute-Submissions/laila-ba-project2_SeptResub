@@ -41,7 +41,8 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin:100px 0;
+  margin:200px 0;
+  flex-wrap:none;
 }
 .col-1{
   flex-basis:40%;
