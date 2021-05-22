@@ -98,13 +98,13 @@ header{
     text-align: center;
 }
 .containerbox{
-  height:70vh
+  height:70vh;
 }
 /*#main-section .text-center img{
   text-align: center;
   width:250px;
   height: 0 auto;*/
-}
+
 .moves-counter {
   padding: 0.5em;
 }
