@@ -32,8 +32,7 @@ header{
   z-index:10;
 }
 .wrapper {
-  min-height: 85vh;
-  margin-top:70px;
+  min-height: 70vh;
 }
 .index .row{
   display:flex;
@@ -306,10 +305,10 @@ text-align: center;
     top:10px;
     width:95%;
   }
-  .wrapper {
-    min-height: 65vh;
-    margin-top: 0;
-}
+  .wrapper{
+    min-height:0;
+    margin-top: 10px;
+  }
   .game{
     height: 400px;
     max-width:325px;
@@ -334,10 +333,11 @@ text-align: center;
   .col-12 p {
     font-size:12px;
     flex-basis:100%;
-    margin-bottom:50px;
     text-align: center;
   }
-
+  .div .start-button{
+    text-align:center;
+  }
     .col-12 h2{
       font-size:35px;
       text-align: center;
