@@ -111,9 +111,9 @@ header{
 .reset-btn {
   background: red;
 }
-.game-area{
+/*.game-area{
   display:none;
-}
+}*/
 .game{
   background: #60AAF6;
   width: 640px;
