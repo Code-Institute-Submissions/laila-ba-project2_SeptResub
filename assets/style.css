@@ -352,7 +352,7 @@ text-align: center;
     .containerbox{
       height:85vh
     }
-    .text-center img{
+    #main-section .text-center img{
       display:none;
     }
 }
