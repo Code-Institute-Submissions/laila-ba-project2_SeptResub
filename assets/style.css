@@ -175,19 +175,6 @@ footer{
 #start-game:hover{
 transform: scale(1.10);
 }
-#start-game2{
-  text-transform:uppercase;
-  font-weight:800;
-  color:#fff;
-  background-color:#FD0000;
-  border-radius:50px;
-  font-size:20px;
-  width:150px;
-  transition: .2s ease-in-out 0s;
-}
-#start-game2:hover{
-transform: scale(1.10);
-}
 #instructions{
   text-transform:uppercase;
   font-weight:800;
