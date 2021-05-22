@@ -97,7 +97,9 @@ header{
     flex-grow: 1;
     align-items: center;
     text-align: center;
-
+}
+.containerbox{
+  height:70vh
 }
 #main-section .text-center img{
   text-align: center;
@@ -359,5 +361,8 @@ text-align: center;
     .col-12 img{
       height:auto;
       width:80%;
+    }
+    .containerbox{
+      height:85vh
     }
 }
