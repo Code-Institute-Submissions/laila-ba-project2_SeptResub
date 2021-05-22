@@ -354,6 +354,6 @@ text-align: center;
       height:85vh
     }
     #main-section .text-center img{
-      display:none;
+      /*display:none;*/
     }
 }
