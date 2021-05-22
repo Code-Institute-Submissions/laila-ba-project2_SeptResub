@@ -99,7 +99,7 @@ header{
     text-align: center;
 
 }
-.text-center img{
+#main-section .text-center img{
   text-align: center;
   width:250px;
   height: 0 auto;
