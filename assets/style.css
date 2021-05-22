@@ -161,17 +161,18 @@ footer{
   position:sticky;
 }
 
-#start-game{
+#start-game {
   text-transform:uppercase;
+  text-decoration: none;
   font-weight:800;
   color:#fff;
   background-color:#FD0000;
   border-radius:50px;
   font-size:20px;
-  width:120px;
+  width:140px;
   transition: .2s ease-in-out 0s;
 }
-#start-game:hover{
+#start-game :hover{
 transform: scale(1.10);
 }
 #instructions{
