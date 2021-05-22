@@ -29,9 +29,7 @@ body{
   background-size:cover;
 }
 header{
-  position:absolute;
   z-index:10;
-  width:100%;
 }
 .wrapper {
   min-height: 85vh;
@@ -314,9 +312,6 @@ text-align: center;
 
 
 @media screen and (max-width: 700px){
-  header{
-    position:relative;
-  }
   .contact-form{
     position:relative;
     top:10px;
@@ -353,11 +348,7 @@ text-align: center;
     margin-bottom:50px;
     text-align: center;
   }
-    /*.col-lg-8{
-      margin-left:15px;
-      margin-bottom:40px;
-      flex-basis:50%;
-    }*/
+
     .col-12 h2{
       font-size:35px;
       text-align: center;
@@ -367,7 +358,6 @@ text-align: center;
     }
     .col-12 img{
       height:auto;
-      width:90%;
+      width:80%;
     }
 }
-@media (max-width: 560px){
