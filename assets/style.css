@@ -335,7 +335,7 @@ text-align: center;
     flex-basis:100%;
     text-align: center;
   }
-  .div .start-button{
+  .start-button{
     text-align:center;
   }
     .col-12 h2{
@@ -351,5 +351,8 @@ text-align: center;
     }
     .containerbox{
       height:85vh
+    }
+    .text-center img{
+      display:none;
     }
 }
