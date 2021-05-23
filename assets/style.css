@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 *,
 *::before,
 *::after {
@@ -90,7 +91,6 @@ header{
 }
 .navbar-brand img{
   width:300px;
-  height:auto 0;
 }
 .navbar-collapse {
     flex-basis: 100%;
@@ -250,7 +250,6 @@ width: 600px;
 background: #60AAF6;
 border: 3px solid #fff;
 position:relative;
-transform: translate(-50%, -50%)
 padding:30px 40px;
 box-sizing:border-box;
 border-radius:8px;
