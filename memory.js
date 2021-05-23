@@ -69,11 +69,7 @@ let moves = 0;
 const reset = document.querySelector(".reset-btn");
 
 //game
-//loop over card array + create image elements
 function createGame(){
-  //$(".start-button").click(function() {
-    //$(".game-area").css("display", "block");
-    //});
   for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img');
     card.setAttribute('src', './assets/img/random.png');
@@ -107,7 +103,7 @@ function checkForMatch(){
     //gives a point for every match
     if (cardsWon.length === cardList.length/2){
       //collected al cards in array
-      $("#win-message").removeClass("d-none")
+      $("#win-message").removeClass("d-none");
     }
 }
 //flips cards
@@ -127,7 +123,7 @@ reset.addEventListener("click", resetEverything);
 function resetEverything() {
   game.innerHTML = "";
   createGame(game, cardList);
-  //reset the minutes and seconds update inner HTML
+
   moves = 0;
   movesCount.innerHTML = 0;
   cardsWon = [];
@@ -138,7 +134,7 @@ function resetEverything() {
 
 function movesCounter() {
   movesCount.innerHTML ++;
-  // Keep track of the number of moves for every pair checked
+
   moves ++;
 }
 createGame();
