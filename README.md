@@ -84,4 +84,18 @@ Within my project, i used bootstrap's framework and libraries to ensure my site 
 
 #Skeleton-
 
-As part of my planning process, creating wireframes helped me to visualize my ideas and see if they would be pleasing to the eye. These are my initial conceptual ideas:
+As part of my planning process, creating mockups helped me to visualize my ideas and see if they would be pleasing to the eye. These are my initial conceptual ideas:
+
+*HOME PAGE*
+
+![project2-index](https://user-images.githubusercontent.com/75024926/119268300-37552380-bbea-11eb-9b68-bc22126cac35.png)
+
+*PLAY PAGE*
+
+![project2-play](https://user-images.githubusercontent.com/75024926/119268309-420fb880-bbea-11eb-8baa-b3527f286a24.png)
+
+*CONTACT PAGE*
+
+![project2-contact](https://user-images.githubusercontent.com/75024926/119268322-4e941100-bbea-11eb-90cb-635f25088b18.png)
+
+
