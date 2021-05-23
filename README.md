@@ -29,10 +29,10 @@ I began to conduct some research on what features a conventional memory game inc
 
 *User Stories*
 
-  - As a first-time user, I want the game to be easy and simple to understand and play.
-  - As a first-time user, I want to be able to play the game across any device.
-  - As a first-time user, I want to have clear instructions so I know how to play the game.
-  - As a first-time user, I want to be able to contact the developer with any questions.
+  - As a user, I want to be able to easily navigate my way through the site.
+  - As a user, I want to be able to play the game across any device.
+  - As a user, I want to have clear instructions so I know how to play the game.
+  - As a user, I want to be able to contact the developer with any questions.
 
 Once establishing both creator and user stories, my goals for my project were clear as I had an evident idea of what users will be expecting of the project game.
 
@@ -191,4 +191,4 @@ I chose to go ahead with these changes as I thought it would make my project a l
   * Used to check and correct grammatical errors across the project.
 
 # Testing
- 
+ * [User Stories](https://www.grammarly.com/)
