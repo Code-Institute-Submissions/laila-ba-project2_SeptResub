@@ -121,6 +121,9 @@ if (cardsChosen.length === 2){
 }
 reset.addEventListener("click", resetEverything);
 function resetEverything() {
+  $(".reset").click(function() {
+    $("#win-message").css("display", "none");
+    //});
   game.innerHTML = "";
   createGame(game, cardList);
 
