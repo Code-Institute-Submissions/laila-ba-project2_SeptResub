@@ -181,7 +181,7 @@ I chose to go ahead with these changes as I thought it would make my project a l
 * [JS validator](https://jshint.com/)
   * Used as a JS validator
 
-* [HTML validator](https://www.freeformatter.com/html-validator.html)
+* [HTML validator](https://validator.w3.org/)
   * Used as a HTML validator
   
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
@@ -212,3 +212,7 @@ I used Chrome dev tools to allow me to view how my site would look across the fo
 - Ipad
 - Ipad Pro
 
+I used validators to validate my HTML, CSS and JS errors within my code
+
+The main errors that came up in my HTML code were:
+- Some img elements were missing 'alt' attributes. I added these with small descriptions of what the images were.
