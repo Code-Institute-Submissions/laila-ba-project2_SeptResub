@@ -119,7 +119,8 @@ cardsChosenId.push(cardId);
 this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
   //so it doesnt happen too quickly
-  setTimeout(checkForMatch,1000);
+  setTimeout(checkForMatch,200);
+
   }
 }
 reset.addEventListener("click", resetEverything);
