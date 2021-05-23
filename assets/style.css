@@ -27,6 +27,7 @@ body{
           flex-direction: column;
   background: url("./img/sky5.gif") no-repeat;
   background-size:cover;
+  background-color:#60AAF6;
 }
 header{
   z-index:10;
@@ -98,7 +99,7 @@ header{
     text-align: center;
 }
 .containerbox{
-  height:70vh;
+  height:100vh;
 }
 #toad img{
   text-align: center;
@@ -298,7 +299,7 @@ text-align: center;
 /*DESKTOP*/
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 990px){
   .contact-form{
     position:relative;
     top:10px;
@@ -347,9 +348,6 @@ text-align: center;
     .col-12 img{
       height:auto;
       width:80%;
-    }
-    .containerbox{
-      height:85vh
     }
     #toad{
       display:none;
