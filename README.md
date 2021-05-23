@@ -212,7 +212,70 @@ I used Chrome dev tools to allow me to view how my site would look across the fo
 - Ipad
 - Ipad Pro
 
-I used validators to validate my HTML, CSS and JS errors within my code
+I used a validator to validate my HTML, CSS and JS errors within my code
 
 The main errors that came up in my HTML code were:
 - Some img elements were missing 'alt' attributes. I added these with small descriptions of what the images were.
+- unclosed div elements
+- no spaces between attributes.
+These errors were all fixed.
+
+The main errors that came up in my CSS code were:
+- missing semi colons
+These errors were all fixed.
+
+The main errors that came up in my JS code were:
+-missing semi-colons
+-some variables were not defined properly.
+Most of these errors were fixed, however i was left with "'result' and '$' is not defined."
+
+I used Dev tools quite alot throughout my testing process to see if variables were being called. I did this through the console, and would constantly console.log to see if they were working. this technique i found very helpful as if the console wouldnt output the varibales, i would know something is wrong and go back to the code to correct it.
+
+# Known Bugs and fixes
+- My landing page main content wasnt responsive. I added bootstrap elements such as 'text-center' and 'container-fluid' to ensure it was able to be viewed on smaller screens.
+- my footer was responsive on some devices but not all. I made a seperate media query for the specific device size in order to ensure the footer stayed at the bottom for all viewports.
+- My reset button wasnt working on the game page as it would only reset the moves and not the score. I added : result.innerHTML = 0; to the reset function.
+These issues were fixed with the help of tutor support and Harry Leepz from Slack
+
+Although some issues were fixed, there are a couple that still need trouble shooting. For an example, the users are able to spam click the cards on the game which can sometimes result in cards not flipping back down. Also, if one card is clicked twice, the score can go up as the same card ID i clicked. I hope to fix these issues when i have more of an understanding on Javascript.
+
+## Deployment
+
+This project has been deployed using GitHub pages and I have used the following process to do so:
+
+**Publishing**
+
+* Within your repository section, choose which project you would like to deploy.
+* At the top, underneath the project name, there are several options such as 'code' and 'issues'
+* Choose the option 'settings'
+* Scroll down until you see the section: 'Github Pages'
+* Within this section, below 'source', choose which branch your project is under and then click Save.
+* Once the page refreshes, go to the Github pages section and you will see "Your site is published at ...."
+* Click on the Github Pages web address and you will see your project live.
+
+**Forking**
+You can fork a project to make a copy without it affecting the main branch with this process:
+
+* log in to GitHub and find the repository that you wish to fork
+* Once you have clicked on the repository, on the top right-hand side you will see three options: 'unwatch' 'star' and 'fork'
+* Once the fork button is clicked, you will then have a copy of the repository in your Github account
+
+**Cloning**
+You can clone/download your chosen repository to your local device by using this process:
+
+* Choose the Github repository that you wish to clone.
+* Chose the 'code' button at the top next top 'add file'.
+* Copy the link that you are given.
+* Open your terminal and choose the directory to the location you would like the clone to be in.
+* type in *git clone* and paste the URL you copied and then click enter.
+
+# Credits
+
+* Used [Stack Overflow](https://stackoverflow.com/) when having issues with code and to find solutions.
+* Used [Online Tutorials Youtube](https://www.youtube.com/watch?v=Y4lOwOOK7yE) to help me with the js code for making the 'moves' score increse.
+* Used [Dani Krossings videos](https://www.youtube.com/channel/UCzyuZJ8zZ-Lhfnz41DG5qLw) to help me understnad a bit more of JS functions.
+* Used [Bootstrap](https://getbootstrap.com/L) with navigation bars and cebtering text.
+
+## Acknowledgements
+
+* A large part of this project was done independently as i dont ask for help too often, however Harry Leepz and tutor support were extremely helpful along the way with frustrating pieces of code that would not work! That being said, I hope you all enjoy my project :)
