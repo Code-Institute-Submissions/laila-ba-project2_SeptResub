@@ -191,4 +191,24 @@ I chose to go ahead with these changes as I thought it would make my project a l
   * Used to check and correct grammatical errors across the project.
 
 # Testing
- * [User Stories](https://www.grammarly.com/)
+ *User Stories*
+ ![testing user stories 1](https://user-images.githubusercontent.com/75024926/119271076-db919700-bbf7-11eb-9c44-6cce79036d78.png)
+
+![testing user stories 2](https://user-images.githubusercontent.com/75024926/119271079-e0564b00-bbf7-11eb-9a5c-6a1550fd7c48.png)
+
+I used the following browsers to test out my project:
+- Google chrome
+- Firefox
+- Microsoft Edge
+
+I used Chrome dev tools to allow me to view how my site would look across the following devices:
+
+- Iphone X
+- Iphone 6/7/8
+- iPhone 5/SE
+- Pixel 2/2 XL
+- Motorola G4
+- Surface Duo
+- Ipad
+- Ipad Pro
+
