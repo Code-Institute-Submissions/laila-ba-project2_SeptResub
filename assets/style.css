@@ -100,11 +100,10 @@ header{
 .containerbox{
   height:70vh;
 }
-/*#main-section .text-center img{
+#toad img{
   text-align: center;
   width:250px;
-  height: 0 auto;*/
-
+}
 .moves-counter {
   padding: 0.5em;
 }
@@ -313,7 +312,7 @@ text-align: center;
     height: 400px;
     max-width:325px;
   }
-  .text-center img {
+  .col-12 .text-center img {
     text-align: center;
     width: 200px;
   }
@@ -351,5 +350,8 @@ text-align: center;
     }
     .containerbox{
       height:85vh
+    }
+    #toad{
+      display:none;
     }
 }
