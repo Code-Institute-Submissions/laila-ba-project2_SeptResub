@@ -98,9 +98,6 @@ header{
     align-items: center;
     text-align: center;
 }
-.containerbox{
-  height:100vh;
-}
 #toad img{
   text-align: center;
   width:250px;
@@ -159,6 +156,7 @@ img.game-cards{
 }
 footer{
   position:sticky;
+  margin-top: 2rem;
 }
 
 #start-game {
@@ -349,7 +347,19 @@ text-align: center;
       height:auto;
       width:80%;
     }
+
     #toad{
       display:none;
     }
+}
+@media screen and (min-width: 1024px){
+  .containerbox{
+    height:79vh;
+  }
+
+}
+@media screen and (min-width: 1200px){
+  .containerbox{
+    height:69vh;
+  }
 }
