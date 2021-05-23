@@ -98,4 +98,97 @@ As part of my planning process, creating mockups helped me to visualize my ideas
 
 ![project2-contact](https://user-images.githubusercontent.com/75024926/119268322-4e941100-bbea-11eb-90cb-635f25088b18.png)
 
+There were minor changes made from the origional idea however i attempted to not make any major differences. Here are the differences between the initial mockups to my current project:
 
+###Home page:
+
+-The nav bar logo and sub pages were on opposite sides of the page. I brought these closer as i thought it look more appealing to the eye.
+- The hero image and text have switched sides, making it easier to become responsive
+
+###Play page:
+
+-The play and instructions button have been removed as the game appears by default and the instructions are on the home page. This made a lot more sense as now, the user can click the play button on the home page and be redirected to the play page and begin the game without clicking any extra buttons.
+
+- The 'moves' and 'score' boxes appear above the game, keeping a simple and clean finish to the page. This can stay the same on smaller screens aswell.
+- The toad image on the page is removed on smaller screens to allow only the game to be the main focus and be too much for the eye.
+
+I chose to go ahead with these changes as I thought it would make my project a lot more appealing to the user. The changes were made as a result of my growth and learning in interactive, front-end development as I have more of an understanding and more experience in the design and development of the project.
+
+#Surface-
+
+**Features that are present in the project**
+
+- All pages have the same responsive navigation bar which includes the game logo and sub pages. The nav bar can be viewed on all devices as it toggles into a hamburger menu when viewed on smaller viewports. The active page is highlighted bright yellow, corresponding to the site's colour scheme.
+
+- A play button on the landing page to allow the user to be directed easily to play the game instead of having to click the options on the nav bar.
+
+- A bright, moving pixel sky backgound to enhance the playful theme and allow the other primary colours across the site to stand out. E.g: the red play button goes very nicely with the blue coloured background.
+
+- There is a clear and evident colour scheme throughout the site: blue, yellow and red. This adds very nicely to the clean and simple finish while also bringing a nostalgic, Nintendo feel.
+
+- Large hero images of Toad on the Home and Play page to keep the theme consistent and fill out empty spaces.
+
+- A simple, minimalistic footer with no background colour, allowing the soical icons to stand out as they are in different primary colours.
+
+- The score and moves update with every match made.
+
+- A contact form on the contact page to allow the user to directly communicate with the developer. 
+
+- A reset button for Play page, allowing the user to reset their moves and score easily without refreshing the page or closing the tab.
+
+**Features that I still need to add**
+
+- Having the contact form send the user's message to the developers email.
+
+- Adding a timer feature to the game.
+
+- To add a feature to the game where the user cant click on more than two cards at a time.
+
+- As the Winning message appears, the game is no longer on display.
+
+# Technologies Used
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * This is used a the base of the code. It structures the code and acts as the main building block
+
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
+  * This allows styling to be added to the project.
+
+* [Hover.css](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover)
+  * Hover effect used for the social icons, navbar, and portfolio.
+
+* [Bootstrap](https://getbootstrap.com/L)
+  * A framework to make the project responsive
+
+* [jQuery](https://jquery.com/)
+  * A framework used with Javascript
+
+* [Font Awesome](https://fontawesome.com/)
+  * Used to obtain icons used for the footer and contact page.
+
+* [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+  * Used to help debug the code and help find syntax errors.
+
+* [Github](https://github.com/)
+  * Used to push and store the code.
+
+* [Atom](https://atom.io/)
+  * Used as the IDE and the development environment for writing the code.
+
+* [JustInMind](https://www.justinmind.com/)
+  * Used to create mockups.
+
+* [JS validator](https://jshint.com/)
+  * Used as a JS validator
+
+* [HTML validator](https://www.freeformatter.com/html-validator.html)
+  * Used as a HTML validator
+  
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+  * Used as a CSS validator
+
+* [Grammarly](https://www.grammarly.com/)
+  * Used to check and correct grammatical errors across the project.
+
+# Testing
+ 
