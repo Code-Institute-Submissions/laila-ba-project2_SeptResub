@@ -32,14 +32,9 @@ form.addEventListener("submit", (e) => {
             }
         }
     }
-
-    /** https://www.w3resource.com/javascript/form/email-validation.php */
-
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailAddress.value)) {
-        for (let i = 0; i < error.length; i++) {
-            if (error[i] === "Please enter a valid email address") {
-                error.splice[i, 1];
-            }
-        }
+    if ( error =[] ){
+      alert("Thank you for your email. We will get back to you as soon as we can.");
+    } else {
+      error.push("Please fill in the form correctly");
     }
 });
