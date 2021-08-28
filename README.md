@@ -1,6 +1,6 @@
 Milestone Project2 - Memory Toad Game
 
-##Introduction-
+## Introduction-
 
 Welcome to my second Milestone Project called *'Memory Toad'* which will be showcasing my skills, learning and understanding that I have learnt through the course so far while being implemented into a front-end, user centric memory game.
 
@@ -14,7 +14,7 @@ During the planning process, I found the Elements of User-Experience to be helpf
 - The Skeleton Plane
 - The Surface Plane
 
-#Stategy-
+# Stategy-
 
 I began to conduct some research on what features a conventional memory game included in order to further understand what users would be expecting. I came up with a list of goals that I would want to achieve for my project:
 
@@ -36,7 +36,7 @@ I began to conduct some research on what features a conventional memory game inc
 
 Once establishing both creator and user stories, my goals for my project were clear as I had an evident idea of what users will be expecting of the project game.
 
-#Scope-
+# Scope-
 
 This project is a memory matching game that allows you to keep track of your score and moves.
 
@@ -51,14 +51,14 @@ This project is a memory matching game that allows you to keep track of your sco
 
 4. A contact page to allow the users to contact the developer with questions and suggestions.
 
-##Requirements-
+## Requirements-
 - The game can be played across all devices and screen sizes.
 - The site is responsive.
 - Buttons and links are clear and easy to click on.
 - The navigation bar is always present(A menu for smaller screen sizes.)
 - A functioning reset button so the user doesn't have to exit the browser to play again.
 
-#Structure-
+# Structure-
 
 As my game characters were based on Nintendo's Mario games, i wanted to make a clear connection to the colours Nintendo uses within their games. This is done to bring the nostalgic feel to my project and incorporate the Mario magic that I, and Nintendo fans feel.
 As I was already familiar with the Nintendo bright and fun colour scheme, i went ahead and chose these as my main colours:
@@ -82,7 +82,7 @@ Use of relevant images on the landing and play page to fill in empty spaces and 
 
 Within my project, i used bootstrap's framework and libraries to ensure my site is responsive and has a clean finish.
 
-#Skeleton-
+# Skeleton-
 
 As part of my planning process, creating mockups helped me to visualize my ideas and see if they would be pleasing to the eye. These are my initial conceptual ideas:
 
@@ -100,12 +100,12 @@ As part of my planning process, creating mockups helped me to visualize my ideas
 
 There were minor changes made from the origional idea however i attempted to not make any major differences. Here are the differences between the initial mockups to my current project:
 
-###Home page:
+### Home page:
 
 -The nav bar logo and sub pages were on opposite sides of the page. I brought these closer as i thought it look more appealing to the eye.
 - The hero image and text have switched sides, making it easier to become responsive
 
-###Play page:
+### Play page:
 
 -The play and instructions button have been removed as the game appears by default and the instructions are on the home page. This made a lot more sense as now, the user can click the play button on the home page and be redirected to the play page and begin the game without clicking any extra buttons.
 
@@ -114,7 +114,7 @@ There were minor changes made from the origional idea however i attempted to not
 
 I chose to go ahead with these changes as I thought it would make my project a lot more appealing to the user. The changes were made as a result of my growth and learning in interactive, front-end development as I have more of an understanding and more experience in the design and development of the project.
 
-#Surface-
+# Surface-
 
 **Features that are present in the project**
 
@@ -191,6 +191,18 @@ I chose to go ahead with these changes as I thought it would make my project a l
   * Used to check and correct grammatical errors across the project.
 
 # Testing
+
+## Functionality Testing
+ - Navigation bar
+    - The navigation bar always stays at the top of the page, on all sub pages and screen devices.
+    - When the logo/ game name 'Memory toad' is clicked on, It brings the user to the home page.(has been tested on all screen views from all pages.
+    - All links are working properly and have been tested.
+    - The hamburger dropdown menu appears on screen sizes smaller than 992px. These links on the dropdown have been tested and are working fine.
+
+  - Hover effects throughout site
+    - Every button throughout the site has some sort of hover effect, either a change in background colour, or a slight increase in size to imitate the retro nintendo buttons. All       hover effects have smooth transitions.
+   
+  -Footer 
  *User Stories*
  ![testing user stories 1](https://user-images.githubusercontent.com/75024926/119271076-db919700-bbf7-11eb-9c44-6cce79036d78.png)
 
