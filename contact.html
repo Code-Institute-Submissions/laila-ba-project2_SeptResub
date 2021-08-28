@@ -35,25 +35,30 @@
       </div>
     </nav>
   </header>
-  <div class="wrapper">
-    <div class="contact-form">
-      <h1>Contact Us</h1>
-        <p>Have any questions? Why not contact us directly.</p>
+<form id="form" onsubmit="return;">
+    <div class="wrapper">
+      <div class="contact-form">
+        <h1>Contact Us</h1>
+          <p>Have any questions? Why not contact us directly.</p>
+            <div class="txtb">
+              <label for="fullname">Full name (required)*</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Full Name.." required>
+            </div>
+        <div class="txtb">
+          <label for="emailaddress">Email Address (required)*</label>
+            <input type="email" id="emailaddress" name="emailaddress" placeholder="example@domain.com" required>
+        </div>
+        <div class="txtb">
+          <label for="message">Your Message:</label>
+          <textarea rows="5" id="message" name="message" placeholder="Write your message here" required></textarea>
+        </div>
+        <div id="error-msg" ></div>
           <div class="txtb">
-            <label>Full Name:</label>
-              <input type="text" >
+            <button type="submit" class="btn">Submit</button>
           </div>
-      <div class="txtb">
-        <label>Email:</label>
-          <input type="text" >
-      </div>
-      <div class="txtb">
-        <label>Your Message:</label>
-          <textarea></textarea>
-      </div>
-      <a class="btn">Send</a>
+    </div>
   </div>
-</div>
+</form>
 <footer>
   <ul class="list-inline contact-links">
     <li class="list-inline-item">
@@ -68,6 +73,7 @@
   </ul>
 </footer>
       <script src="memory.js" charset="utf-8"></script>
+      <script src="contact.js" charset="utf-8"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
