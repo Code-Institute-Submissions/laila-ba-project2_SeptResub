@@ -14,7 +14,7 @@ During the planning process, I found the Elements of User-Experience to be helpf
 - The Skeleton Plane
 - The Surface Plane
 
-# Stategy-
+# Strategy-
 
 I began to conduct some research on what features a conventional memory game included in order to further understand what users would be expecting. I came up with a list of goals that I would want to achieve for my project:
 
@@ -86,12 +86,8 @@ Within my project, i used bootstrap's framework and libraries to ensure my site 
 
 As part of my planning process, creating mockups and wireframes helped me to visualize my ideas and see if they would be pleasing to the eye. These are my initial conceptual ideas:
 
-[Desktop Wireframes[()
-[Mobile Wireframes]()
-
-[Desktop Mockup]()
-[Mobile Mockup]()
-
+[Wireframes](https://github.com/laila-ba/project2/tree/main/wireframes)
+[ Mockups](https://github.com/laila-ba/project2/tree/main/mockups)
 
 
 There were minor changes made from the origional idea however i attempted to not make any major differences. Here are the differences between the initial mockups to my current project:
@@ -211,10 +207,10 @@ I chose to go ahead with these changes as I thought it would make my project a l
     - The reset button resets both the score and moves count back to zero. 
 
 
- *User Stories*
- ![testing user stories 1](https://user-images.githubusercontent.com/75024926/119271076-db919700-bbf7-11eb-9c44-6cce79036d78.png)
+ *Testing User Stories*
+[testing user stories 1](https://user-images.githubusercontent.com/75024926/119271076-db919700-bbf7-11eb-9c44-6cce79036d78.png)
 
-![testing user stories 2](https://user-images.githubusercontent.com/75024926/119271079-e0564b00-bbf7-11eb-9a5c-6a1550fd7c48.png)
+[testing user stories 2](https://user-images.githubusercontent.com/75024926/119271079-e0564b00-bbf7-11eb-9a5c-6a1550fd7c48.png)
 
 I used the following browsers to test out my project:
 - Google chrome
@@ -264,7 +260,7 @@ I used Dev tools quite alot throughout my testing process to see if variables we
 
 4. The reset button wasnt shuffling the cards
 
-5. Users are able to spam click the cards causing the game to crash. 
+5. Users can spam click the cards causing the game to crash. 
     - I wanted to ensure that the player is unable to click more than 2 cards at a time until the code checks if the cards match.
 
 6. The contact form wasnt functioning.
