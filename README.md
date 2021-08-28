@@ -203,6 +203,18 @@ I chose to go ahead with these changes as I thought it would make my project a l
     - Every button throughout the site has some sort of hover effect, either a change in background colour, or a slight increase in size to imitate the retro nintendo buttons. All       hover effects have smooth transitions.
    
   -Footer 
+    - footer and social icons are always displayed at the bottom of the page .
+    - When social links are clicked on, they are taken to the right and relevant social media pages on a new tab.
+    
+  - Contact Form
+    - The form requires all fields to be filled out and alerts the user when this is not done. The user cannot submit the form until this is done.
+    - Once the submit button is pressed an alert message appears letting the user know that their message has been sent. This message appears on all screen sizes.
+    
+  - The Game
+    - When two cards are clicked on, the moves counter increases by one, when a match is made,the score count increases by one.
+    - The reset button resets both the score and moves count back to zero. 
+
+
  *User Stories*
  ![testing user stories 1](https://user-images.githubusercontent.com/75024926/119271076-db919700-bbf7-11eb-9c44-6cce79036d78.png)
 
@@ -244,12 +256,24 @@ Most of these errors were fixed, however i was left with "'result' and '$' is no
 I used Dev tools quite alot throughout my testing process to see if variables were being called. I did this through the console, and would constantly console.log to see if they were working. this technique i found very helpful as if the console wouldnt output the varibales, i would know something is wrong and go back to the code to correct it.
 
 # Known Bugs and fixes
-- My landing page main content wasnt responsive. I added bootstrap elements such as 'text-center' and 'container-fluid' to ensure it was able to be viewed on smaller screens.
-- my footer was responsive on some devices but not all. I made a seperate media query for the specific device size in order to ensure the footer stayed at the bottom for all viewports.
-- My reset button wasnt working on the game page as it would only reset the moves and not the score. I added : result.innerHTML = 0; to the reset function.
-These issues were fixed with the help of tutor support and Harry Leepz from Slack
 
-Although some issues were fixed, there are a couple that still need trouble shooting. For an example, the users are able to spam click the cards on the game which can sometimes result in cards not flipping back down. Also, if one card is clicked twice, the score can go up as the same card ID i clicked. I hope to fix these issues when i have more of an understanding on Javascript.
+1. The landing page main content wasnt responsive.
+  - I added bootstrap elements and classes thoughout the HTML such as 'text-center' and 'container-fluid' to ensure it was able to be viewed on smaller screens and responsiveness    would be smooth 
+
+2. The footer was responsive on some devices but not all. 
+    - I made a seperate media query for the specific device size in order to ensure the footer stayed at the bottom of the page for all viewports.
+ 
+3. The reset button wasnt working on the game page as it would only reset the moves and not the score. 
+    - I added : result.innerHTML = 0; to the reset function in my JavaScript in order for the result count to be reset to 0.
+
+4. The reset button wasnt shuffling the cards
+
+5. Users are able to spam click the cards causing the game to crash. 
+    - I wanted to ensure that the player is unable to click more than 2 cards at a time until the code checks if the cards match.
+
+6. The contact form wasnt functioning.
+    - I added the form element to HTML and added input fields. I then created a JS file for the contact form which allowed me to add if statements for when error messages would appear. I also added an alert message for when the message was successfully sent through an if statement which checked if the amount of errors were equal to 0.
+   
 
 ## Deployment
 
