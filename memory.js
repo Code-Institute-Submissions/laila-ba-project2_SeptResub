@@ -122,7 +122,7 @@ if (cardsChosen.length === 2){
 }
 
 
-reset.addEventListener("click", resetEverything, shuffle(cards));
+reset.addEventListener("click", resetEverything, shuffle(game));
 function resetEverything() {
   $(".reset").click(function() {
     $("#win-message").css("display", "none");
