@@ -60,20 +60,16 @@ cardList.sort(()=> 0.5 - Math.random());
 
 const game= document.querySelector('.game');
 const resultDisplay= document.querySelector('#result');
-var cardsChosen = [];
-var cardsChosenId= [];
-var cardsWon = [];
+let cardsChosen = [];
+let cardsChosenId= [];
+let cardsWon = [];
 
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
 const reset = document.querySelector(".reset-btn");
 
 //game
-//loop over card array + create image elements
 function createGame(){
-  $("#start-game").click(function() {
-    $(".game-area").css("display", "block");
-    });
   for (let i = 0; i < cardList.length; i++){
     var card = document.createElement('img');
     card.setAttribute('src', './assets/img/random.png');
@@ -85,68 +81,87 @@ function createGame(){
   }
 }
 
+
 //will check for matches
 function checkForMatch(){
   var cards= document.querySelectorAll('img.game-cards');
-  console.log(cards);
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
-  console.log(optionOneId);
-    console.log(optionTwoId);
-  if (cardsChosen[0] === cardsChosen[1]){
-    alert('Its a match!')
-    movesCounter();
-    //cards[optionOne].setAttribute('src','./assets/img/blank.png');
-    //cards[optionTwo].setAttribute('src', './assets/img/blank.png');
-    console.log(cards[optionOneId]);
-    console.log(cards[optionTwoId]);
-    cardsWon.push(cardsChosen);
-  } else{
-    //flip the card around to play again
-    cards[optionOneId].setAttribute('src','./assets/img/random.png');
-    cards[optionTwoId].setAttribute('src','./assets/img/random.png');
-    alert('Sorry, try again')
-    movesCounter();
-  }
-  //clear the card array and start again
-    cardsChosen=[];
-    cardsChosenId= [];
-    resultDisplay.textContent= cardsWon.length;
-    //gives a point for every match
-    if (cardsWon.length === cardList.length/2){
-      //collected al cards in array
-      resultDisplay.textContent = 'Congratulations! You found all the matches';
+  if (!paused){
+    if (cardsChosenId[0] === null){
+      return false;
     }
-}
-//flips cards
-function flipCard(){
-var cardId= this.getAttribute('data-id');
-cardsChosen.push(cardList[cardId].name);
-cardsChosenId.push(cardId);
-//add img to square based on cardID
-this.setAttribute('src', cardList[cardId].img);
-if (cardsChosen.length === 2){
-  //so it doesnt happen too quickly
-  setTimeout(checkForMatch,500);
-  }
-}
+    else if (cardsChosenId[0] === cardsChosenId[1]){
+      return;
+    }
+    else if (cardsChosenId[0] !== null){
+      paused = true;
 
-function resetEverything() {
-  $(".reset").click(function() {
-  //reset the minutes and seconds update inner HTML
-  moves = 0;
-  movesCount.innerHTML = 0;
-  cardsChosen=[];
-  cardsChosenId= [];
- createGame(resetEverything);
-  }
-}
-console.log()
-function movesCounter() {
-  movesCount.innerHTML ++;
-  // Keep track of the number of moves for every pair checked
-  moves ++;
-}
+        if (cardsChosen[0] === cardsChosen[1]){
+          cardsChosenId[0] = null;
+          paused = false;
+          movesCounter();
+          cardsWon.push(cardsChosen);
+        } else{
+          //flip the card around to play again
+          setTimout (() => {
+            cardsChosenId[0] = null;
 
-createGame();
+            paused =false;
+          }, 1500);
+
+          cards[optionOneId].setAttribute('src','./assets/img/random.png');
+          cards[optionTwoId].setAttribute('src','./assets/img/random.png');
+          movesCounter();
+          };
+        }
+      };
+    //clear the card array and start again
+      cardsChosen=[];
+      cardsChosenId= [];
+
+      resultDisplay.textContent= cardsWon.length;
+      //gives a point for every match
+      if (cardsWon.length === cardList.length/2){
+        //collected al cards in array
+        $("#win-message").removeClass("d-none");
+      }
+  }
+  //flips cards
+  function flipCard(){
+  var cardId= this.getAttribute('data-id');
+  cardsChosen.push(cardList[cardId].name);
+  cardsChosenId.push(cardId);
+  //add img to square based on cardID
+  this.setAttribute('src', cardList[cardId].img);
+  if (cardsChosen.length === 2){
+    //so it doesnt happen too quickly
+    setTimeout(checkForMatch,400);
+
+    }
+  };
+
+  reset.addEventListener("click", resetEverything);
+  function resetEverything() {
+    $(".reset").click(function() {
+      $("#win-message").css("display", "none");
+      });
+    game.innerHTML = "";
+    createGame(game, cardList);
+
+    moves = 0;
+    movesCount.innerHTML = 0;
+    cardsWon = [];
+    result.innerHTML = 0;
+    cardsChosen = [];
+    cardsChosenId = [];
+  }
+
+  function movesCounter() {
+    movesCount.innerHTML ++;
+
+    moves ++;
+  }
+  createGame();
+
 });
