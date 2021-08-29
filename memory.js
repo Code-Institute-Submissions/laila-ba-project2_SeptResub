@@ -63,8 +63,6 @@ const resultDisplay= document.querySelector('#result');
 let cardsChosen = [];
 let cardsChosenId= [];
 let cardsWon = [];
-let firstCard = [];
-let paused = false;
 
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
@@ -86,7 +84,6 @@ function createGame(){
 
 //will check for matches
 function checkForMatch(){
-if(paused){
   var cards= document.querySelectorAll('img.game-cards');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
@@ -95,12 +92,10 @@ if(paused){
     cardsWon.push(cardsChosen);
   } else{
     //flip the card around to play again
-    paused = false
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
     movesCounter();
   }
-}
   //clear the card array and start again
     cardsChosen=[];
     cardsChosenId= [];
@@ -120,20 +115,14 @@ cardsChosenId.push(cardId);
 //add img to square based on cardID
 this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
-  if(cardsChosen === cardsChosen[0]){
-    cardsChosen[0].push(firstCard);
-  }else if (cardsChosenId[0] === cardsChosenId[1]){
-      return;
+  //so it doesnt happen too quickly
+  setTimeout(checkForMatch,400);
 
-    }else{
-      //so it doesnt happen too quickly
-      paused = true;
-      setTimeout(checkForMatch,400);
-    }
   }
 }
 
-reset.addEventListener("click", resetEverything);
+
+reset.addEventListener("click", resetEverything, shuffle(cards));
 function resetEverything() {
   $(".reset").click(function() {
     $("#win-message").css("display", "none");
@@ -147,6 +136,21 @@ function resetEverything() {
   result.innerHTML = 0;
   cardsChosen = [];
   cardsChosenId = [];
+}
+
+function shuffle(array) {
+    var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
 }
 
 function movesCounter() {
