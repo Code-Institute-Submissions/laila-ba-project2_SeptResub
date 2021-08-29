@@ -87,82 +87,60 @@ function checkForMatch(){
   var cards= document.querySelectorAll('img.game-cards');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
-  let paused = false;
-  if (!paused){
-    if (cardsChosenId[0] === null){
-      return false;
-    }
-    else if (cardsChosenId[0] === cardsChosenId[1]){
-      return;
-    }
-    else if (cardsChosenId[0] !== null){
-      paused = true;
-
-        if (cardsChosen[0] === cardsChosen[1]){
-          cardsChosenId[0] = null;
-          paused = false;
-          movesCounter();
-          cardsWon.push(cardsChosen);
-        } else{
-          //flip the card around to play again
-          setTimeout (() => {
-            cardsChosenId[0] = null;
-
-            paused =false;
-          }, 1500);
-
-          cards[optionOneId].setAttribute('src','./assets/img/random.png');
-          cards[optionTwoId].setAttribute('src','./assets/img/random.png');
-          movesCounter();
-          };
-        }
-      };
-    //clear the card array and start again
-      cardsChosen=[];
-      cardsChosenId= [];
-
-      resultDisplay.textContent= cardsWon.length;
-      //gives a point for every match
-      if (cardsWon.length === cardList.length/2){
-        //collected al cards in array
-        $("#win-message").removeClass("d-none");
-      }
+  if (cardsChosen[0] === cardsChosen[1]){
+    movesCounter();
+    cardsWon.push(cardsChosen);
+  } else{
+    //flip the card around to play again
+    cards[optionOneId].setAttribute('src','./assets/img/random.png');
+    cards[optionTwoId].setAttribute('src','./assets/img/random.png');
+    movesCounter();
   }
-  //flips cards
-  function flipCard(){
-  var cardId= this.getAttribute('data-id');
-  cardsChosen.push(cardList[cardId].name);
-  cardsChosenId.push(cardId);
-  //add img to square based on cardID
-  this.setAttribute('src', cardList[cardId].img);
-  if (cardsChosen.length === 2){
-    //so it doesnt happen too quickly
-    setTimeout(checkForMatch,400);
+  //clear the card array and start again
+    cardsChosen=[];
+    cardsChosenId= [];
 
+    resultDisplay.textContent= cardsWon.length;
+    //gives a point for every match
+    if (cardsWon.length === cardList.length/2){
+      //collected al cards in array
+      $("#win-message").removeClass("d-none");
     }
-  };
+}
+//flips cards
+function flipCard(){
+var cardId= this.getAttribute('data-id');
+cardsChosen.push(cardList[cardId].name);
+cardsChosenId.push(cardId);
+//add img to square based on cardID
+this.setAttribute('src', cardList[cardId].img);
+if (cardsChosen.length === 2){
+  //so it doesnt happen too quickly
+  setTimeout(checkForMatch,400);
 
-  reset.addEventListener("click", resetEverything);
-  function resetEverything() {
-    $(".reset").click(function() {
-      $("#win-message").css("display", "none");
-      });
-    game.innerHTML = "";
-    createGame(game, cardList);
-
-    moves = 0;
-    movesCount.innerHTML = 0;
-    cardsWon = [];
-    result.innerHTML = 0;
-    cardsChosen = [];
-    cardsChosenId = [];
   }
+}
 
-  function movesCounter() {
-    movesCount.innerHTML ++;
+reset.addEventListener("click", resetEverything);
+function resetEverything() {
+  $(".reset").click(function() {
+    $("#win-message").css("display", "none");
+    });
+  game.innerHTML = "";
+  createGame(game, cardList);
 
-    moves ++;
-  }
-  createGame();
+  moves = 0;
+  movesCount.innerHTML = 0;
+  cardsWon = [];
+  result.innerHTML = 0;
+  cardsChosen = [];
+  cardsChosenId = [];
+}
 
+function movesCounter() {
+  movesCount.innerHTML ++;
+
+  moves ++;
+}
+createGame();
 });
