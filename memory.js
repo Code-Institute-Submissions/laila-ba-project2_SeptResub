@@ -87,6 +87,7 @@ function checkForMatch(){
   var cards= document.querySelectorAll('img.game-cards');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
+  let paused = false;
   if (!paused){
     if (cardsChosenId[0] === null){
       return false;
@@ -104,7 +105,7 @@ function checkForMatch(){
           cardsWon.push(cardsChosen);
         } else{
           //flip the card around to play again
-          setTimout (() => {
+          setTimeout (() => {
             cardsChosenId[0] = null;
 
             paused =false;
