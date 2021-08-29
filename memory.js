@@ -122,7 +122,7 @@ if (cardsChosen.length === 2){
 }
 
 
-reset.addEventListener("click", resetEverything, shuffle(array));
+reset.addEventListener("click", resetEverything, );
 function resetEverything() {
   $(".reset").click(function() {
     $("#win-message").css("display", "none");
@@ -138,20 +138,6 @@ function resetEverything() {
   cardsChosenId = [];
 }
 
-function shuffle(array) {
-    var currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-    while (currentIndex !== 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-}
 
 function movesCounter() {
   movesCount.innerHTML ++;
