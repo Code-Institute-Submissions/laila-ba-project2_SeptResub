@@ -63,6 +63,7 @@ const resultDisplay= document.querySelector('#result');
 let cardsChosen = [];
 let cardsChosenId= [];
 let cardsWon = [];
+let firstCard = [];
 
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
@@ -114,7 +115,9 @@ cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
 //add img to square based on cardID
 this.setAttribute('src', cardList[cardId].img);
-if (cardsChosen.length === 2){
+if (cardsChosen.length !=== 2){
+  return;
+}else{
   //so it doesnt happen too quickly
   setTimeout(checkForMatch,400);
 
