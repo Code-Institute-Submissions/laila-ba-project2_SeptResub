@@ -115,7 +115,7 @@ cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
 //add img to square based on cardID
 this.setAttribute('src', cardList[cardId].img);
-if (cardsChosen.length !=== 2){
+if (cardsChosen.length !== 2){
   return;
 }else{
   //so it doesnt happen too quickly
