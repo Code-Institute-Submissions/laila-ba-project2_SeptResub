@@ -93,6 +93,7 @@ function checkForMatch(){
     locked = false;
     movesCounter();
     cardsWon.push(cardsChosen);
+    console.log("cardsWon", cardsWon);
   } else{
     locked = false;
     //flip the card around to play again
