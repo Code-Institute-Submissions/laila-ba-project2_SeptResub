@@ -63,6 +63,7 @@ const resultDisplay= document.querySelector('#result');
 let cardsChosen = [];
 let cardsChosenId= [];
 let cardsWon = [];
+let locked = false;
 
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
@@ -84,6 +85,7 @@ function createGame(){
 
 //will check for matches
 function checkForMatch(){
+  if(locked)return;
   var cards= document.querySelectorAll('img.game-cards');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
@@ -109,6 +111,7 @@ function checkForMatch(){
 }
 //flips cards
 function flipCard(){
+  if(locked) return;
 var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
@@ -116,6 +119,7 @@ cardsChosenId.push(cardId);
 this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
   //so it doesnt happen too quickly
+  locked = true;
   setTimeout(checkForMatch,400);
 
   }
