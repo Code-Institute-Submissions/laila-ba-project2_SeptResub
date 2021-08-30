@@ -89,6 +89,7 @@ function checkForMatch(){
   var cards= document.querySelectorAll('img.game-cards');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
+  locked= false;
   if (cardsChosen[0] === cardsChosen[1]){
     movesCounter();
     cardsWon.push(cardsChosen);
