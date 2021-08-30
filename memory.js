@@ -78,7 +78,6 @@ function createGame(){
     //give each card data id
     card.setAttribute('data-id', i);
     card.addEventListener('click',flipCard);
-    console.log(locked);
     game.appendChild(card);
   }
 }
@@ -127,6 +126,7 @@ if (cardsChosen.length === 2){
 }else{
   locked=false;
 }
+console.log(locked);
 }
 
 
