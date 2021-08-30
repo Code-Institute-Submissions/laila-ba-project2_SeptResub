@@ -88,6 +88,7 @@ function checkForMatch(){
   var cards= document.querySelectorAll('img.game-cards');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
+  console.log(optionOneId, optionTwoId);
   const img1 = document.querySelector("[data-id='optionOneId']");
   const img2 = document.querySelector("[data-id='optionTwoId']");
   console.log(img1, img2);
@@ -100,7 +101,6 @@ function checkForMatch(){
   } else{
     locked = false;
     //flip the card around to play again
-    console.log(optionOneId, optionTwoId);
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
 
