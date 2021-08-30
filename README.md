@@ -258,7 +258,9 @@ I used Dev tools quite alot throughout my testing process to see if variables we
 3. The reset button wasnt working on the game page as it would only reset the moves and not the score. 
     - I added : result.innerHTML = 0; to the reset function in my JavaScript in order for the result count to be reset to 0.
 
-4. The reset button wasnt shuffling the cards
+4. The reset button wasnt shuffling the cards.
+    - This enabled the user to remember exactly where the cards are, and defeats the purpose of a reset button. I fixed this issue by adding the line of code:
+      - cardList.sort(()=> 0.5 - Math.random());
 
 5. Users can spam click the cards causing the game to crash. 
     - I wanted to ensure that the player is unable to click more than 2 cards at a time until the code checks if the cards match.
