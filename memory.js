@@ -98,9 +98,9 @@ function checkForMatch(){
     locked = false;
     //flip the card around to play again
     console.log(optionOneId, optionTwoId);
-    var img1 = cards[optionOneId].setAttribute('src','./assets/img/random.png');
-    var img2 = cards[optionTwoId].setAttribute('src','./assets/img/random.png');
-    console.log(img1, img2);
+    [optionOneId].setAttribute('src','./assets/img/random.png');
+    [optionTwoId].setAttribute('src','./assets/img/random.png');
+
     movesCounter();
   //clear the card array and start again
     cardsChosen=[];
