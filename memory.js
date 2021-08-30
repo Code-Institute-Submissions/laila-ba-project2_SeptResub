@@ -98,8 +98,8 @@ function checkForMatch(){
     locked = false;
     //flip the card around to play again
     console.log(optionOneId, optionTwoId);
-    [optionOneId].setAttribute('src','./assets/img/random.png');
-    [optionTwoId].setAttribute('src','./assets/img/random.png');
+    optionOneId.setAttribute('src','./assets/img/random.png');
+    optionTwoId.setAttribute('src','./assets/img/random.png');
 
     movesCounter();
   //clear the card array and start again
