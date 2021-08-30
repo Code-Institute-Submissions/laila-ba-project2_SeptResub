@@ -99,11 +99,11 @@ function checkForMatch(){
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
     movesCounter();
-  }
+
   //clear the card array and start again
     cardsChosen=[];
     cardsChosenId= [];
-
+}
     resultDisplay.textContent= cardsWon.length;
     //gives a point for every match
     if (cardsWon.length === cardList.length/2){
@@ -124,7 +124,7 @@ if (cardsChosen.length === 2){
   locked = true;
   setTimeout(checkForMatch,400);
 }else{
-  locked=false;
+  locked = false;
 }
 console.log(locked);
 }
