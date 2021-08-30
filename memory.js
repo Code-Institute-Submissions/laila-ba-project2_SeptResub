@@ -94,6 +94,7 @@ function checkForMatch(){
     cardsWon.push(cardsChosen);
   } else{
     //flip the card around to play again
+    locked = false;
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
     movesCounter();
