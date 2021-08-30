@@ -113,7 +113,6 @@ function checkForMatch(){
 }
 //flips cards
 function flipCard(){
-  if(locked) return;
 var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
