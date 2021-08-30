@@ -85,7 +85,7 @@ function createGame(){
 
 //will check for matches
 function checkForMatch(){
-  var cards= document.querySelectorAll('img.game-cards');
+  var cards= document.querySelector('data-id');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
   console.log(cardsChosen[0], cardsChosen[1]);
