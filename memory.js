@@ -129,6 +129,7 @@ if (cardsChosen.length === 2){
 reset.addEventListener("click", resetEverything, );
 function resetEverything() {
   $(".reset").click(function() {
+    locked = false;
     cardList.sort(()=> 0.5 - Math.random());
     $("#win-message").css("display", "none");
     });
