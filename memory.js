@@ -118,6 +118,7 @@ function flipCard(){
 var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
+console.log(cardsChosenId)
 //add img to square based on cardID
 this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
