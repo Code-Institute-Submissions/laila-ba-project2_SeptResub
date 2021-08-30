@@ -90,6 +90,7 @@ function checkForMatch(){
   const optionTwoId = cardsChosenId[1];
   const img1 = document.querySelector("[data-id='optionOneId']");
   const img2 = document.querySelector("[data-id='optionTwoId']");
+  console.log(img1, img2);
   console.log(cardsChosen[0], cardsChosen[1]);
   if (cardsChosen[0] === cardsChosen[1]){
     locked = false;
