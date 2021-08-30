@@ -86,8 +86,9 @@ Within my project, i used bootstrap's framework and libraries to ensure my site 
 
 As part of my planning process, creating mockups and wireframes helped me to visualize my ideas and see if they would be pleasing to the eye. These are my initial conceptual ideas:
 
-[Wireframes](https://github.com/laila-ba/project2/tree/main/wireframes)
-[ Mockups](https://github.com/laila-ba/project2/tree/main/mockups)
+- [Wireframes](https://github.com/laila-ba/project2/tree/main/wireframes)
+
+- [ Mockups](https://github.com/laila-ba/project2/tree/main/mockups)
 
 
 There were minor changes made from the origional idea however i attempted to not make any major differences. Here are the differences between the initial mockups to my current project:
@@ -208,9 +209,10 @@ I chose to go ahead with these changes as I thought it would make my project a l
 
 
  *Testing User Stories*
-[testing user stories 1](https://user-images.githubusercontent.com/75024926/119271076-db919700-bbf7-11eb-9c44-6cce79036d78.png)
+ 
+- [testing user stories 1](https://user-images.githubusercontent.com/75024926/119271076-db919700-bbf7-11eb-9c44-6cce79036d78.png)
 
-[testing user stories 2](https://user-images.githubusercontent.com/75024926/119271079-e0564b00-bbf7-11eb-9a5c-6a1550fd7c48.png)
+- [testing user stories 2](https://user-images.githubusercontent.com/75024926/119271079-e0564b00-bbf7-11eb-9a5c-6a1550fd7c48.png)
 
 I used the following browsers to test out my project:
 - Google chrome
@@ -256,14 +258,14 @@ I used Dev tools quite alot throughout my testing process to see if variables we
     - I made a seperate media query for the specific device size in order to ensure the footer stayed at the bottom of the page for all viewports.
  
 3. The reset button wasnt working on the game page as it would only reset the moves and not the score. 
-    - I added : result.innerHTML = 0; to the reset function in my JavaScript in order for the result count to be reset to 0.
+    - I added : result.innerHTML = 0; to the reset function in my JavaScript in order for the result count to be reset to 0. This line of code is also added at the top of the js file in order the game to reshuffle when the tab is refreshed.
 
 4. The reset button wasnt shuffling the cards.
     - This enabled the user to remember exactly where the cards are, and defeats the purpose of a reset button. I fixed this issue by adding the line of code:
       - cardList.sort(()=> 0.5 - Math.random());
 
 5. Users can spam click the cards causing the game to crash. 
-    - I wanted to ensure that the player is unable to click more than 2 cards at a time until the code checks if the cards match.
+    - I wanted to ensure that the player is unable to click more than 2 cards at a time until the code checks if the cards match. I began this step by step and added 'let locked = false;' as a variable that would determin when or where the locked variable would take place. I made sure to set the 'locked = false' in the reset function in order for the cards to be unlocked once the board is reset. 
 
 6. The contact form wasnt functioning.
     - I added the form element to HTML and added input fields. I then created a JS file for the contact form which allowed me to add if statements for when error messages would appear. I also added an alert message for when the message was successfully sent through an if statement which checked if the amount of errors were equal to 0.
