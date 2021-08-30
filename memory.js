@@ -90,11 +90,12 @@ function checkForMatch(){
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
   if (cardsChosen[0] === cardsChosen[1]){
+    locked = false;
     movesCounter();
     cardsWon.push(cardsChosen);
   } else{
-    //flip the card around to play again
     locked = false;
+    //flip the card around to play again
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
     movesCounter();
