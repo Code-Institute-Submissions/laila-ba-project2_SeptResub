@@ -123,8 +123,9 @@ if (cardsChosen.length === 2){
   //so it doesnt happen too quickly
   locked = true;
   setTimeout(checkForMatch,400);
-
-  }
+}else{
+  locked=false;
+}
 }
 
 
