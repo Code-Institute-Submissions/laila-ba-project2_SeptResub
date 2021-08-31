@@ -96,7 +96,7 @@ function checkForMatch(){
   if (cardsChosen[0] === cardsChosen[1]){
     locked = false;
     movesCounter();
-    cardsWon.push(cardsChosen[0], cardsChosen[1]);
+    cardsWon.push(cardsChosen);
     console.log("cardsWon", cardsWon);
   } else{
     locked = false;
