@@ -89,8 +89,8 @@ function checkForMatch(){
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
   console.log(optionOneId, optionTwoId);
-  const img1=document.querySelector('[data-id=optionOneId]');
-  const img2=document.querySelector('[data-id=optionTwoId]');
+  const img1 = document.querySelector('[data-id=optionOneId]');
+  const img2 = document.querySelector('[data-id=optionTwoId]');
   console.log(img1, img2);
   console.log(cardsChosen[0], cardsChosen[1]);
   if (cardsChosen[0] === cardsChosen[1]){
