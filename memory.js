@@ -104,7 +104,6 @@ function checkForMatch(){
     cards[optionOneId].setAttribute('src','./assets/img/random.png');
     cards[optionTwoId].setAttribute('src','./assets/img/random.png');
 }
-    movesCounter();
   //clear the card array and start again
     cardsChosen=[];
     cardsChosenId= [];
