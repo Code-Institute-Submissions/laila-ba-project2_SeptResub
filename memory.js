@@ -88,22 +88,19 @@ function checkForMatch(){
   var cards= document.querySelectorAll('img.game-cards');
   const optionOneId = cardsChosenId[0];
   const optionTwoId = cardsChosenId[1];
-  console.log(optionOneId, optionTwoId);
   const img1= document.querySelector('[data-id=optionOneId]');
   const img2= document.querySelector('[data-id=optionTwoId]');
-  console.log(img1, img2);
-  console.log(cardsChosen[0], cardsChosen[1]);
-  if (cardsChosen[0] === cardsChosen[1]){
-    locked = false;
-    movesCounter();
-    cardsWon.push(cardsChosen);
-    console.log("cardsWon", cardsWon);
-  } else{
-    locked = false;
-    //flip the card around to play again
-    cards[optionOneId].setAttribute('src','./assets/img/random.png');
-    cards[optionTwoId].setAttribute('src','./assets/img/random.png');
-}
+      if (cardsChosen[0] === cardsChosen[1]){
+        locked = false;
+        movesCounter();
+        cardsWon.push(cardsChosen);
+      } else{
+        locked = false;
+        //flip the card around to play again
+        card.addEventListener('click',flipCard);
+        cards[optionOneId].setAttribute('src','./assets/img/random.png');
+        cards[optionTwoId].setAttribute('src','./assets/img/random.png');
+    }
     movesCounter();
   //clear the card array and start again
     cardsChosen=[];
@@ -118,11 +115,13 @@ function checkForMatch(){
 }
 //flips cards
 function flipCard(){
-  if(locked) return;
+if(locked) return;
+  if (cardsChosen.length == 0){
+    this.removeEventListener('click',flipCard);
+  }
 var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
-console.log(cardsChosenId)
 //add img to square based on cardID
 this.setAttribute('src', cardList[cardId].img);
 if (cardsChosen.length === 2){
@@ -134,7 +133,6 @@ if (cardsChosen.length === 2){
 }
 console.log(locked);
 }
-
 
 reset.addEventListener("click", resetEverything, );
 function resetEverything() {
