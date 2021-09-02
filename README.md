@@ -186,6 +186,7 @@ I chose to go ahead with these changes as I thought it would make my project a l
 # Testing
 
 ## Functionality Testing
+
  - Navigation bar
     - The navigation bar always stays at the top of the page, on all sub pages and screen devices.
     - When the logo/ game name 'Memory toad' is clicked on, It brings the user to the home page.(has been tested on all screen views from all pages.
@@ -205,6 +206,7 @@ I chose to go ahead with these changes as I thought it would make my project a l
     
   - The Game
     - When two cards are clicked on, the moves counter increases by one, when a match is made,the score count increases by one.
+    - When reset button is clicked, the cards are flipped back around, the score and moves are reset, and cards are shuffled.
     - The reset button resets both the score and moves count back to zero. 
 
 
