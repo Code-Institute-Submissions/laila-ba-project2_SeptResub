@@ -99,7 +99,7 @@ function checkForMatch(){
         locked = false;
         // get first element in first card array
         theCard = firstCard[0];
-        clickedCards.forEach(function(card)){
+        clickedCards.forEach(function(card){
           card.addEventListener('click',flipCard);
         });
         //flip the card around to play again
