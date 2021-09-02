@@ -98,8 +98,6 @@ function checkForMatch(){
     movesCounter();
     cardsWon.push(cardsChosen);
     console.log("cardsWon", cardsWon);
-    cardsChosen[0].removeEventListener('click',flipCard);
-    cardsChosen[1].removeEventListener('click',flipCard);
   } else{
     locked = false;
     //flip the card around to play again
