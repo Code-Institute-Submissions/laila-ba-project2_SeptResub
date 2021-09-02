@@ -97,7 +97,6 @@ function checkForMatch(){
       } else{
         locked = false;
         //flip the card around to play again
-        card.addEventListener('click',flipCard);
         cards[optionOneId].setAttribute('src','./assets/img/random.png');
         cards[optionTwoId].setAttribute('src','./assets/img/random.png');
     }
