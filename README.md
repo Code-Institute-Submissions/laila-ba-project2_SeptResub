@@ -271,6 +271,12 @@ I used Dev tools quite alot throughout my testing process to see if variables we
 
 6. The contact form wasnt functioning.
     - I added the form element to HTML and added input fields. I then created a JS file for the contact form which allowed me to add if statements for when error messages would appear. I also added an alert message for when the message was successfully sent through an if statement which checked if the amount of errors were equal to 0.
+
+7. The player could press on the same card twice, and the score would increase. 
+  - In order to resolve this, i had to create the empty array of 'firstCard' which is where both first and second cards would be pushed to. The logic i used was: the two cards that are chosen are pushed to the 'firstCard' array. If theyre a match, their click event listeners are removed, else, they flip back around. The array is cleared after every pair is chosen.
+
+8. I had a slight overflow issue only on smaller screen devices. 
+  - I fixed this by removing the padding on the navbar which was pushing the whole page to the right, resulting in a scroll bar at the bottom of the page. 
    
 
 ## Deployment
