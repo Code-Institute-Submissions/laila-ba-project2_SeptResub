@@ -64,6 +64,7 @@ let cardsChosen = [];
 let cardsChosenId= [];
 let cardsWon = [];
 let locked = false;
+let firstCard = [];
 
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
@@ -96,7 +97,9 @@ function checkForMatch(){
         cardsWon.push(cardsChosen);
       } else{
         locked = false;
-        this.addEventListener('click',flipCard);
+        // get first element in first card array
+        theCard = firstCard[0];
+        theCard.addEventListener('click',flipCard);
         //flip the card around to play again
         cards[optionOneId].setAttribute('src','./assets/img/random.png');
         cards[optionTwoId].setAttribute('src','./assets/img/random.png');
@@ -105,6 +108,7 @@ function checkForMatch(){
   //clear the card array and start again
     cardsChosen=[];
     cardsChosenId= [];
+    firstCard = [];
 
     resultDisplay.textContent= cardsWon.length;
     //gives a point for every match
@@ -118,6 +122,8 @@ function flipCard(){
 if(locked) return;
   if (cardsChosen.length == 0){
     this.removeEventListener('click',flipCard);
+    cardClicked = this;
+    firstCard.push(cardClicked);
   }
 var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
