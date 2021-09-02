@@ -96,7 +96,7 @@ function checkForMatch(){
         cardsWon.push(cardsChosen);
       } else{
         locked = false;
-        this.removeEventListener('click',flipCard);
+        this.addEventListener('click',flipCard);
         //flip the card around to play again
         cards[optionOneId].setAttribute('src','./assets/img/random.png');
         cards[optionTwoId].setAttribute('src','./assets/img/random.png');
