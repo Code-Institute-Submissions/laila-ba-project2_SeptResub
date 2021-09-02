@@ -122,11 +122,9 @@ function checkForMatch(){
 //flips cards
 function flipCard(){
 if(locked) return;
-  if (cardsChosen.length == 0){
     card = this;
     card.removeEventListener('click',flipCard);
     firstCard.push(card);
-  }
 var cardId= this.getAttribute('data-id');
 cardsChosen.push(cardList[cardId].name);
 cardsChosenId.push(cardId);
