@@ -137,7 +137,6 @@ if (cardsChosen.length === 2){
 }else{
   locked = false;
 }
-console.log(locked);
 }
 
 reset.addEventListener("click", resetEverything, );
