@@ -208,6 +208,9 @@ I chose to go ahead with these changes as I thought it would make my project a l
     - When two cards are clicked on, the moves counter increases by one, when a match is made,the score count increases by one.
     - When reset button is clicked, the cards are flipped back around, the score and moves are reset, and cards are shuffled.
     - The reset button resets both the score and moves count back to zero. 
+    - The user is unable to click on more than two cards at a time as the game board is locked during the matching period.
+    - Once a match is made, the user cant click on one of the matched cards.
+    - The user cant click on the same card twice.
 
 
  *Testing User Stories*
@@ -277,6 +280,17 @@ I used Dev tools quite alot throughout my testing process to see if variables we
 
 8. I had a slight overflow issue only on smaller screen devices. 
   - I fixed this by removing the padding on the navbar which was pushing the whole page to the right, resulting in a scroll bar at the bottom of the page. 
+
+9. The matched cards could still be clicked on and played with even after being matched. To resolve this, i used this line of logic:
+      - card.removeEventListener('click',flipCard);
+      - This enables me to remove the event listener of the cards being clicked if they were a match until the board is reset again.
+
+Throughout the whole process of testing and debugging, console.logging throughout my Javascript code enabled me to figure out where in my code the issue was coming from.
+
+![testing console](https://user-images.githubusercontent.com/75024926/132100386-ce10abb5-5e7a-4bb7-b65d-20b3b70d53cb.png)
+
+- For example, the screenshot above allowed me to see that all my arrays were acting correctly, however my images were loging out as 'null' instead of their srcs.
+
    
 
 ## Deployment
