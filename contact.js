@@ -34,6 +34,7 @@ form.addEventListener("submit", (e) => {
     }
     if ( error.length === 0){
       alert("Thank you for your email. We will get back to you as soon as we can.");
+      location.href ="index.html";
     } else {
       error.push("Please fill in the form correctly");
     }
