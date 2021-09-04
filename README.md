@@ -38,7 +38,7 @@ Once establishing both creator and user stories, my goals for my project were cl
 
 # Scope-
 
-This project is a memory matching game that allows you to keep track of your score and moves.
+This project is a simple and fun memory matching game that allows you to keep track of your score and moves.
 
 1. The landing, play and contact page share the same simple design, yet correspond perfectly with Nintendo's retro game colour scheme. The simple to use, neat display offers the users easy navigation and total control.
 
@@ -57,6 +57,8 @@ This project is a memory matching game that allows you to keep track of your sco
 - Buttons and links are clear and easy to click on.
 - The navigation bar is always present(A menu for smaller screen sizes.)
 - A functioning reset button so the user doesn't have to exit the browser to play again.
+- The game is functioning with no crashes or bugs.
+- a simple and minimalistic design to keep the focus on the game.
 
 # Structure-
 
@@ -135,9 +137,6 @@ I chose to go ahead with these changes as I thought it would make my project a l
 
 - Adding a timer feature to the game.
 
-- To add a feature to the game where the user cant click on more than two cards at a time.
-
-- As the Winning message appears, the game is no longer on display.
 
 # Technologies Used
 
@@ -203,6 +202,7 @@ I chose to go ahead with these changes as I thought it would make my project a l
   - Contact Form
     - The form requires all fields to be filled out and alerts the user when this is not done. The user cannot submit the form until this is done.
     - Once the submit button is pressed an alert message appears letting the user know that their message has been sent. This message appears on all screen sizes.
+    - Once the 'ok' button is clicked on the modal message, the user is redirected to the home page.
     
   - The Game
     - When two cards are clicked on, the moves counter increases by one, when a match is made,the score count increases by one.
@@ -252,8 +252,6 @@ The main errors that came up in my JS code were:
 -some variables were not defined properly.
 Most of these errors were fixed, however i was left with "'result' and '$' is not defined."
 
-I used Dev tools quite alot throughout my testing process to see if variables were being called. I did this through the console, and would constantly console.log to see if they were working. this technique i found very helpful as if the console wouldnt output the varibales, i would know something is wrong and go back to the code to correct it.
-
 # Known Bugs and fixes
 
 1. The landing page main content wasnt responsive.
@@ -285,14 +283,13 @@ I used Dev tools quite alot throughout my testing process to see if variables we
       - card.removeEventListener('click',flipCard);
       - This enables me to remove the event listener of the cards being clicked if they were a match until the board is reset again.
 
-Throughout the whole process of testing and debugging, console.logging throughout my Javascript code enabled me to figure out where in my code the issue was coming from.
+I used Dev tools quite alot throughout my testing process to see if variables were being called. I did this through the console, and would constantly console.log to see if they were working. this technique i found very helpful as if the console wouldnt output the varibales, i would know something is wrong and go back to the code to correct it.
 
 ![testing console](https://user-images.githubusercontent.com/75024926/132100386-ce10abb5-5e7a-4bb7-b65d-20b3b70d53cb.png)
 
 - For example, the screenshot above allowed me to see that all my arrays were acting correctly, however my images were loging out as 'null' instead of their srcs.
 
    
-
 ## Deployment
 
 This project has been deployed using GitHub pages and I have used the following process to do so:
@@ -330,6 +327,3 @@ You can clone/download your chosen repository to your local device by using this
 * Used [Dani Krossings videos](https://www.youtube.com/channel/UCzyuZJ8zZ-Lhfnz41DG5qLw) to help me understnad a bit more of JS functions.
 * Used [Bootstrap](https://getbootstrap.com/L) with navigation bars and cebtering text.
 
-## Acknowledgements
-
-* A large part of this project was done independently as i dont ask for help too often, however Harry Leepz and tutor support were extremely helpful along the way with frustrating pieces of code that would not work! That being said, I hope you all enjoy my project :)
