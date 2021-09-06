@@ -102,11 +102,12 @@ function checkForMatch(){
         firstCard.forEach(function(card){
           card.addEventListener('click',flipCard);
         });
+          movesCounter();
         //flip the card around to play again
         cards[optionOneId].setAttribute('src','./assets/img/random.png');
         cards[optionTwoId].setAttribute('src','./assets/img/random.png');
     }
-    movesCounter();
+
   //clear the card array and start again
     cardsChosen=[];
     cardsChosenId= [];
