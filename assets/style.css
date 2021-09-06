@@ -303,7 +303,10 @@ text-align: center;
     min-height:0;
     margin-top: 10px;
   }
-
+  .game{
+    height: 400px;
+    max-width:325px;
+  }
   .col-12 .text-center img {
     text-align: center;
     width: 200px;
@@ -344,12 +347,6 @@ text-align: center;
     #toad{
       display:none;
     }
-}
-@media screen and (max-width: 400px){
-.game{
-  height: 400px;
-  max-width:325px;
-  }
 }
 @media screen and (min-width: 1024px){
   .containerbox{
